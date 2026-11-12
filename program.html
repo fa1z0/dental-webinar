@@ -1,392 +1,429 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="assets/aimst logo favicon.png"/>
-    <meta name="description" content="Online Webinar - Program Schedule" />
-    <title>Program Schedule | Online Webinar</title>
-    <!-- Font Awesome for clean icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programme · Graduation to Global Practice Webinar</title>
+  <meta name="description" content="The full two-day programme for the AIMST Faculty of Dentistry webinar — Malaysian registration and practice, specialty postings, practice ownership, and licensing pathways in the UK, USA, Canada, Australia, New Zealand, Singapore and Hong Kong.">
+  <meta name="theme-color" content="#0C4A3E">
+  <meta property="og:title" content="Programme · Graduation to Global Practice">
+  <meta property="og:description" content="Day 1: practice, regulation and ownership in Malaysia. Day 2: licensing and registration across seven international destinations.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="asset/images/cta-clinic.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var t = localStorage.getItem('fod-theme');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        d.setAttribute('data-theme', t);
+      } catch (e) {
+        d.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
 
-    <!-- Header Banner -->
-    <header class="banner">
-      <div class="banner-content">
-        <span class="badge">Online Webinar</span>
-        <h1>Graduation to Global Practice: You Dental Career Journey</h1>
-        <p class="subtitle">19–20 September 2026</p>
-        <div class="tagline">
-          A platform to identify your scope after graduation!
+  <div class="announce">
+    <div class="container announce__inner">
+      <p class="announce__text">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span class="announce__hide">Online webinar · 19–20 September 2026</span>
+        <span class="announce__hide" aria-hidden="true">·</span>
+        <strong><span data-countdown-inline>Early-bird now open</span></strong>
+      </p>
+      <a class="announce__link" href="registration.html">Register <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <div class="container nav-shell__inner">
+        <a href="index.html" class="brand" aria-label="AIMST Faculty of Dentistry — home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32 14.5c-4.4 0-6.1 2.1-8.8 2.1S18.9 14.5 16.5 17c-3.2 3.4-1.9 8.2-.3 12.8 1.1 3 1.6 8.7 4.1 8.7 2.4 0 1.5-5.7 3.7-5.7 2.1 0 2.3 5 4.8 5 2.4 0 2.2-7.3 3.6-7.3 1.4 0 1.5 4.8 3.3 4.8 2.5 0 3.4-5.9 4.4-8.7 1.6-4.7 2.8-9.7-.4-12.9C45.3 14.5 42 16.6 39.7 16.6S36.4 14.5 32 14.5Z" fill="#F6F3EC" />
+              <circle cx="32" cy="34" r="2.4" fill="#B1854C" />
+            </svg>
+          </span>
+          <span class="brand__text">
+            <span class="brand__name">AIMST</span>
+            <span class="brand__sub">Faculty of Dentistry</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html">Home</a></li>
+            <li><a class="nav__link" href="organiser.html">Organisers</a></li>
+            <li><a class="nav__link" href="speakers.html">Speakers</a></li>
+            <li><a class="nav__link is-active" aria-current="page" href="program.html">Programme</a></li>
+            <li><a class="nav__link" href="registration.html">Registration</a></li>
+            <li><a class="nav__link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+            <span class="theme-toggle__track" aria-hidden="true">
+              <i class="fa-solid fa-sun"></i>
+              <i class="fa-solid fa-moon"></i>
+              <span class="theme-toggle__thumb"></span>
+            </span>
+          </button>
+          <a href="registration.html" class="btn btn--primary btn--sm nav-cta">Register</a>
+          <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+            <span></span><span></span>
+          </button>
         </div>
       </div>
-    </header>
+    </div>
 
-    <!-- Navigation Bar -->
-    <nav class="nav-wrapper">
-        <ul class="navigation">
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <nav aria-label="Mobile navigation">
+        <ul class="mobile-nav__list">
+          <li><a class="mobile-nav__link" href="index.html">Home <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link" href="organiser.html">Organisers <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link" href="speakers.html">Speakers <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link is-active" href="program.html">Programme <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link" href="registration.html">Registration <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link" href="contact.html">Contact <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+        </ul>
+      </nav>
+      <div class="mobile-nav__footer">
+        <p class="mobile-nav__meta">19–20 September 2026 · Live online</p>
+        <a href="registration.html" class="btn btn--accent btn--block">Register now <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        <a href="contact.html" class="btn btn--ghost btn--block">Contact the secretariat</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="page-hero__bg" aria-hidden="true">
+        <img src="asset/images/cta-clinic.jpg" alt="" width="1600" height="1067" fetchpriority="high">
+      </div>
+      <div class="container page-hero__inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          <span aria-current="page">Programme</span>
+        </nav>
+        <p class="eyebrow eyebrow--light">Programme schedule</p>
+        <h1>Two days. <em>Every pathway.</em></h1>
+        <p class="page-hero__lede">A focused programme that moves from the practicalities of practising in Malaysia to the detail of licensing and registration in seven international destinations.</p>
+        <div class="page-hero__meta">
+          <span><i class="fa-regular fa-calendar" aria-hidden="true"></i> 19–20 September 2026</span>
+          <span><i class="fa-solid fa-microphone-lines" aria-hidden="true"></i> 14 sessions</span>
+          <span><i class="fa-regular fa-clock" aria-hidden="true"></i> Malaysia Time (UTC+8)</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="filter-bar">
+      <div class="container filter-bar__inner" data-tabs>
+        <div class="tabs" role="tablist" aria-label="Select a day">
+          <button class="tab is-active" type="button" role="tab" aria-selected="true" data-tab="day1" aria-controls="program-day1">
+            <i class="fa-solid fa-calendar-day" aria-hidden="true"></i> Day 1 · 19 Sept
+          </button>
+          <button class="tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-tab="day2" aria-controls="program-day2">
+            <i class="fa-solid fa-calendar-day" aria-hidden="true"></i> Day 2 · 20 Sept
+          </button>
+        </div>
+        <p class="filter-count">All times in <strong>MYT (UTC+8)</strong></p>
+      </div>
+    </div>
+
+    <div class="container program-body">
+      <!-- Day 1 -->
+      <section id="program-day1" data-panel="day1" aria-label="Day 1 schedule">
+        <div class="date-banner" data-reveal>
+          <span class="date-banner__day">Day 01</span>
+          <h3>Saturday, 19 September 2026</h3>
+          <span class="date-banner__count">Practice · Regulation · Ownership</span>
+        </div>
+
+        <div class="agenda">
+          <article class="agenda-item" data-reveal>
+            <div class="agenda-item__time"><i class="fa-regular fa-clock" aria-hidden="true"></i> 08:00 – 08:30</div>
+            <div class="agenda-item__body">
+              <h3 class="agenda-item__title">Registration &amp; welcome</h3>
+            </div>
+          </article>
+
+          <article class="agenda-item" data-reveal>
+            <div class="agenda-item__time"><i class="fa-regular fa-clock" aria-hidden="true"></i> 08:30 – 08:45</div>
+            <div class="agenda-item__body">
+              <h3 class="agenda-item__title">Welcome address by the Hon. Vice-Chancellor, AIMST University</h3>
+            </div>
+          </article>
+
+          <article class="agenda-item" data-reveal>
+            <div class="agenda-item__time"><i class="fa-regular fa-clock" aria-hidden="true"></i> 08:45 – 09:00</div>
+            <div class="agenda-item__body">
+              <h3 class="agenda-item__title">Opening remarks by the Dean, Faculty of Dentistry, AIMST University</h3>
+            </div>
+          </article>
+
+          <article class="agenda-item" data-reveal>
+            <div class="agenda-item__time"><i class="fa-regular fa-clock" aria-hidden="true"></i> 09:00 – 10:00</div>
+            <div class="agenda-item__body">
+              <h3 class="agenda-item__title">Practising Dentistry in Malaysia — What You Need to Know</h3>
+              <p class="agenda-item__speaker"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Dr. Nurul Syakirin Binti Abdul Shukor</p>
+            </div>
+          </article>
+
+          <article class="agenda-item" data-reveal>
+            <div class="agenda-item__time"><i class="fa-regular fa-clock" aria-hidden="true"></i> 10:00 – 11:00</div>
+            <div class="agenda-item__body">
+              <h3 class="agenda-item__title">Speciality Posting at a Glance: Oral &amp; Maxillofacial Surgery</h3>
+              <p class="agenda-item__speaker"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Dr. Ling Xiao Feng</p>
+            </div>
+          </article>
+
+          <article class="agenda-item" data-reveal>
+            <div class="agenda-item__time"><i class="fa-regular fa-clock" aria-hidden="true"></i> 11:00 – 12:00</div>
+            <div class="agenda-item__body">
+              <h3 class="agenda-item__title">Speciality Posting at a Glance: Paediatric Dentistry</h3>
+              <p class="agenda-item__speaker"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Dr. Nur'adilah Binti Ahmad Othman</p>
+            </div>
+          </article>
+
+          <article class="agenda-item" data-reveal>
+            <div class="agenda-item__time"><i class="fa-regular fa-clock" aria-hidden="true"></i> 12:00 – 13:00</div>
+            <div class="agenda-item__body">
+              <h3 class="agenda-item__title">From Graduate to Practice Owner: Setting Up Your Own Clinic</h3>
+              <p class="agenda-item__speaker"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Dr. Ratna Devi Sundaram</p>
+            </div>
+          </article>
+
+          <article class="agenda-item is-break" data-reveal>
+            <div class="agenda-item__time"><i class="fa-regular fa-clock" aria-hidden="true"></i> 13:00 – 14:00</div>
+            <div class="agenda-item__body">
+              <h3 class="agenda-item__title">Lunch break</h3>
+            </div>
+          </article>
+
+          <article class="agenda-item" data-reveal>
+            <div class="agenda-item__time"><i class="fa-regular fa-clock" aria-hidden="true"></i> 14:00 – 15:00</div>
+            <div class="agenda-item__body">
+              <h3 class="agenda-item__title">Towards the Career You Always Wanted — Armed Forces</h3>
+              <p class="agenda-item__speaker"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Major Dr. Ashwin Nathan</p>
+            </div>
+          </article>
+
+          <article class="agenda-item" data-reveal>
+            <div class="agenda-item__time"><i class="fa-regular fa-clock" aria-hidden="true"></i> 15:00 – 16:00</div>
+            <div class="agenda-item__body">
+              <h3 class="agenda-item__title">Towards the Career You Always Wanted — Ministry of Health</h3>
+              <p class="agenda-item__speaker"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Dr. Muhammad Hamidie Saari</p>
+            </div>
+          </article>
+
+          <article class="agenda-item" data-reveal>
+            <div class="agenda-item__time"><i class="fa-regular fa-clock" aria-hidden="true"></i> 16:00 – 16:30</div>
+            <div class="agenda-item__body">
+              <h3 class="agenda-item__title">Beyond the White Coat: Dress, Demeanour and Workplace Etiquette in Dentistry</h3>
+              <p class="agenda-item__speaker"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Dato' Dr. Shah Kamal Khan Bin Jamal Din</p>
+            </div>
+          </article>
+
+          <article class="agenda-item is-break" data-reveal>
+            <div class="agenda-item__time"><i class="fa-regular fa-clock" aria-hidden="true"></i> 16:30</div>
+            <div class="agenda-item__body">
+              <h3 class="agenda-item__title">Closing — Day 1</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Day 2 -->
+      <section id="program-day2" data-panel="day2" aria-label="Day 2 schedule" hidden>
+        <div class="date-banner" data-reveal>
+          <span class="date-banner__day">Day 02</span>
+          <h3>Sunday, 20 September 2026</h3>
+          <span class="date-banner__count">Global licensing · Entrepreneurship</span>
+        </div>
+
+        <div class="agenda">
+          <article class="agenda-item" data-reveal>
+            <div class="agenda-item__time"><i class="fa-regular fa-clock" aria-hidden="true"></i> 09:00 – 10:00</div>
+            <div class="agenda-item__body">
+              <h3 class="agenda-item__title">A Guide to Dental Registration in Australia</h3>
+              <p class="agenda-item__speaker"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Dr. Shawn Paul &amp; Dr. Tham</p>
+            </div>
+          </article>
+
+          <article class="agenda-item" data-reveal>
+            <div class="agenda-item__time"><i class="fa-regular fa-clock" aria-hidden="true"></i> 10:00 – 11:00</div>
+            <div class="agenda-item__body">
+              <h3 class="agenda-item__title">A Guide to Dental Council of New Zealand (DCNZ) Registration</h3>
+              <p class="agenda-item__speaker"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Dr. Beatrice Ng Ming Ming</p>
+            </div>
+          </article>
+
+          <article class="agenda-item" data-reveal>
+            <div class="agenda-item__time"><i class="fa-regular fa-clock" aria-hidden="true"></i> 11:00 – 12:00</div>
+            <div class="agenda-item__body">
+              <h3 class="agenda-item__title">Your Roadmap to Singapore Dental Council (SDC) Registration &amp; Postgraduate Study in Hong Kong</h3>
+              <p class="agenda-item__speaker"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Dr. Yeoh Eng Seng</p>
+            </div>
+          </article>
+
+          <article class="agenda-item" data-reveal>
+            <div class="agenda-item__time"><i class="fa-regular fa-clock" aria-hidden="true"></i> 12:00 – 13:00</div>
+            <div class="agenda-item__body">
+              <h3 class="agenda-item__title">Licensing and Registration in the UK</h3>
+              <p class="agenda-item__speaker"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Dr. Auleep Ganguly</p>
+            </div>
+          </article>
+
+          <article class="agenda-item is-break" data-reveal>
+            <div class="agenda-item__time"><i class="fa-regular fa-clock" aria-hidden="true"></i> 13:00 – 14:00</div>
+            <div class="agenda-item__body">
+              <h3 class="agenda-item__title">Lunch break</h3>
+            </div>
+          </article>
+
+          <article class="agenda-item" data-reveal>
+            <div class="agenda-item__time"><i class="fa-regular fa-clock" aria-hidden="true"></i> 14:00 – 15:00</div>
+            <div class="agenda-item__body">
+              <h3 class="agenda-item__title">U.S. Licensing Pathway: A Guide to Practising Dentistry in the USA</h3>
+              <p class="agenda-item__speaker"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Dr. Suzanne Kan</p>
+            </div>
+          </article>
+
+          <article class="agenda-item" data-reveal>
+            <div class="agenda-item__time"><i class="fa-regular fa-clock" aria-hidden="true"></i> 15:00 – 16:00</div>
+            <div class="agenda-item__body">
+              <h3 class="agenda-item__title">Canadian Licensing Pathway for Dental Practice</h3>
+              <p class="agenda-item__speaker"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Dr. Shince Mathew</p>
+            </div>
+          </article>
+
+          <article class="agenda-item" data-reveal>
+            <div class="agenda-item__time"><i class="fa-regular fa-clock" aria-hidden="true"></i> 16:00 – 17:00</div>
+            <div class="agenda-item__body">
+              <h3 class="agenda-item__title">Dentist as Entrepreneur</h3>
+              <p class="agenda-item__speaker"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Dr. Vinesh Raj Savumthararaj</p>
+            </div>
+          </article>
+
+          <article class="agenda-item is-break" data-reveal>
+            <div class="agenda-item__time"><i class="fa-regular fa-clock" aria-hidden="true"></i> 17:00</div>
+            <div class="agenda-item__body">
+              <h3 class="agenda-item__title">Closing — Day 2</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <p class="program-note">
+        <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+        <span>All times are Malaysia Time (UTC+8). Session details may be updated; registered participants will be notified of any changes.</span>
+      </p>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-band cta-band--inset">
+          <div class="cta-band__bg" aria-hidden="true">
+            <img src="asset/images/hero-clinic.jpg" alt="" width="1800" height="1203" loading="lazy">
+          </div>
+          <div class="cta-band__inner">
+            <h2>Two days that <em>change the map.</em></h2>
+            <div class="cta-band__side">
+              <p>Attend live, put your questions to the speakers, and leave with a clear next step — whichever pathway you choose.</p>
+              <div class="cta-band__actions">
+                <a href="registration.html" class="btn btn--accent">Register now <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                <a href="speakers.html" class="btn btn--ghost-light">Meet the speakers</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer site-footer--flush">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand" aria-label="AIMST Faculty of Dentistry — home">
+            <span class="brand__mark" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 14.5c-4.4 0-6.1 2.1-8.8 2.1S18.9 14.5 16.5 17c-3.2 3.4-1.9 8.2-.3 12.8 1.1 3 1.6 8.7 4.1 8.7 2.4 0 1.5-5.7 3.7-5.7 2.1 0 2.3 5 4.8 5 2.4 0 2.2-7.3 3.6-7.3 1.4 0 1.5 4.8 3.3 4.8 2.5 0 3.4-5.9 4.4-8.7 1.6-4.7 2.8-9.7-.4-12.9C45.3 14.5 42 16.6 39.7 16.6S36.4 14.5 32 14.5Z" fill="#F6F3EC" />
+                <circle cx="32" cy="34" r="2.4" fill="#B1854C" />
+              </svg>
+            </span>
+            <span class="brand__text">
+              <span class="brand__name">AIMST</span>
+              <span class="brand__sub">Faculty of Dentistry</span>
+            </span>
+          </a>
+          <p>An online webinar guiding dental graduates from Malaysian registration to licensed practice around the world.</p>
+          <div class="footer-socials">
+            <a class="social-btn" href="https://www.facebook.com/aimst2u/" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a class="social-btn" href="https://www.instagram.com/aimstuniversity/" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a class="social-btn" href="https://my.linkedin.com/school/aimst-university2001/" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            <a class="social-btn" href="https://www.youtube.com/@aimstuniversityaimst2u" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="organiser.html">Organisers</a></li>
             <li><a href="speakers.html">Speakers</a></li>
-            <li><a class="current" href="program.html">Program</a></li>
+            <li><a href="program.html">Programme</a></li>
             <li><a href="registration.html">Registration</a></li>
             <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="container">
-        <h2 class="section-title">Program Schedule</h2>
-
-        <!-- Day Selector Tabs -->
-        <div class="tabs-container">
-            <button class="tab-btn active" onclick="switchDay('day1')">
-                <i class="fa-solid fa-calendar-day"></i> Day 1 (19 Sept)
-            </button>
-            <button class="tab-btn" onclick="switchDay('day2')">
-                <i class="fa-solid fa-calendar-day"></i> Day 2 (20 Sept)
-            </button>
+          </ul>
         </div>
 
-        <!-- DAY 1 SCHEDULE PANEL -->
-        <div id="day1" class="schedule-panel active">
-            <div class="date-header">
-                <h3><i class="fa-solid fa-calendar-check"></i> Day 1 — Saturday, 19 September 2026</h3>
-                <!-- <p>Focus: ESG Integration & Sustainable Clinical Workflows</p> -->
-            </div>
-
-            <div class="timeline">
-
-                <!-- Item 1 -->
-                <div class="timeline-item">
-                    <div class="time-box">
-                        <span><i class="fa-regular fa-clock"></i> 08:00am - 08:30am</span>
-                    </div>
-                    <div class="session-info">
-                        <!-- <span class="badge-tag badge-break">Registration</span> -->
-                        <h4>Registration</h4>
-                        <!-- <div class="session-desc">Collect conference badges, welcome kit, and morning networking.</div> -->
-                        <!-- <span class="session-location"><i class="fa-solid fa-location-dot"></i> Main Foyer</span> -->
-                    </div>
-                </div>
-
-                <!-- Item 2 -->
-                <div class="timeline-item">
-                    <div class="time-box">
-                        <span><i class="fa-regular fa-clock"></i> 08:30am - 08:45am</span>
-                    </div>
-                    <div class="session-info">
-                        <!-- <span class="badge-tag badge-keynote">Keynote Address</span> -->
-                        <h4>Welcome Address by the Hon Vice-Chancellor, AIMST University</h4>
-                        <!-- <div class="speaker-name"><i class="fa-solid fa-user-doctor"></i> Prof. Dr. Gokulapriyan Karuppiah</div> -->
-                        <!-- <div class="session-desc">Strategies for embedding environmental and social responsibility into private and institutional clinic operations.</div> -->
-                        <!-- <span class="session-location"><i class="fa-solid fa-location-dot"></i> Main Auditorium</span> -->
-                    </div>
-                </div>
-
-                <!-- Item 3 -->
-                <div class="timeline-item">
-                    <div class="time-box">
-                        <span><i class="fa-regular fa-clock"></i> 08:45am - 09:00am</span>
-                    </div>
-                    <div class="session-info">
-                        <!-- <span class="badge-tag badge-plenary">Plenary Lecture</span> -->
-                        <h4>Opening Remarks by the Dean, Faculty of Dentistry, AIMST University</h4>
-                        <!-- <div class="speaker-name"><i class="fa-solid fa-user-doctor"></i> Dr. Sameen Rajasekaran</div> -->
-                        <!-- <div class="session-desc">Practical steps for reducing plastics, managing chemical waste, and adopting energy-efficient equipment.</div> -->
-                        <!-- <span class="session-location"><i class="fa-solid fa-location-dot"></i> Main Auditorium</span> -->
-                    </div>
-                </div>
-
-                <!-- Item 4 -->
-                <div class="timeline-item">
-                    <div class="time-box">
-                        <span><i class="fa-regular fa-clock"></i> 09:00am - 10:00am</span>
-                    </div>
-                    <div class="session-info">
-                        <!-- <span class="badge-tag badge-break">Networking Break</span> -->
-                        <h4>Practicing Dentistry inMalaysia - "What You Need to Know"</h4>
-                        <div class="session-desc">Dr. Nurul Syakirin Binti Abdul Shukor</div>
-                        <!-- <span class="session-location"><i class="fa-solid fa-location-dot"></i> Exhibition Hall</span> -->
-                    </div>
-                </div>
-
-                <!-- Item 5 -->
-                <div class="timeline-item">
-                    <div class="time-box">
-                        <span><i class="fa-regular fa-clock"></i> 10:00am - 11:00am</span>
-                    </div>
-                    <div class="session-info">
-                        <!-- <span class="badge-tag badge-panel">Oral Presentations</span> -->
-                        <h4>"Speciality Posting at a Glance: Oral & Maxillofacial Surgery"</h4>
-                        <div class="session-desc">Dr. Ling Xiao Feng</div>
-                        <!-- <span class="session-location"><i class="fa-solid fa-location-dot"></i> Hall B</span> -->
-                    </div>
-                </div>
-
-                <!-- Item 6 -->
-                <div class="timeline-item">
-                    <div class="time-box">
-                        <span><i class="fa-regular fa-clock"></i> 11:00am - 12:00pm</span>
-                    </div>
-                    <div class="session-info">
-                        <!-- <span class="badge-tag badge-break">Lunch Break</span> -->
-                        <h4>"Speciality Posting at a Glance: Pediatrics Dentistry"</h4>
-                        <div class="session-desc">Dr. Nur'adilah Binti Ahmad Othman</div>
-                        <!-- <span class="session-location"><i class="fa-solid fa-location-dot"></i> Dining Hall</span> -->
-                    </div>
-                </div>
-
-                <!-- Item 7 -->
-                <div class="timeline-item">
-                    <div class="time-box">
-                        <span><i class="fa-regular fa-clock"></i> 12:00pm - 1:00pm</span>
-                    </div>
-                    <div class="session-info">
-                        <!-- <span class="badge-tag badge-break">Lunch Break</span> -->
-                        <h4>"From Graduate to Practice Owner: Setting Up Your Own Clinic"</h4>
-                        <div class="session-desc">Dr. Ratna Devi Sundaram</div>
-                        <!-- <span class="session-location"><i class="fa-solid fa-location-dot"></i> Dining Hall</span> -->
-                    </div>
-                </div>
-
-                <!-- Item 8 -->
-                <div class="timeline-item">
-                    <div class="time-box">
-                        <span><i class="fa-regular fa-clock"></i> 1:00pm - 2:00pm</span>
-                    </div>
-                    <div class="session-info">
-                        <!-- <span class="badge-tag badge-break">Lunch Break</span> -->
-                        <h4>Lunch Break</h4>
-                        <!-- <div class="session-desc">Dr. Ratna Devi Sundaram</div> -->
-                        <!-- <span class="session-location"><i class="fa-solid fa-location-dot"></i> Dining Hall</span> -->
-                    </div>
-                </div>
-
-                <!-- Item 9 -->
-                <div class="timeline-item">
-                    <div class="time-box">
-                        <span><i class="fa-regular fa-clock"></i> 2:00pm - 3:00pm</span>
-                    </div>
-                    <div class="session-info">
-                        <!-- <span class="badge-tag badge-break">Lunch Break</span> -->
-                        <h4>"Towards the Career You Always Wanted - Armed Forces"</h4>
-                        <div class="session-desc">Major Dr. Ashwin Nathan</div>
-                        <!-- <span class="session-location"><i class="fa-solid fa-location-dot"></i> Dining Hall</span> -->
-                    </div>
-                </div>
-
-                <!-- Item 10 -->
-                <div class="timeline-item">
-                    <div class="time-box">
-                        <span><i class="fa-regular fa-clock"></i> 3:00pm - 4:00pm</span>
-                    </div>
-                    <div class="session-info">
-                        <!-- <span class="badge-tag badge-break">Lunch Break</span> -->
-                        <h4>"Towards the Career You Always Wanted - Ministry of Health"</h4>
-                        <div class="session-desc">Dr. Muhammad Hamidie Saari</div>
-                        <!-- <span class="session-location"><i class="fa-solid fa-location-dot"></i> Dining Hall</span> -->
-                    </div>
-                </div>
-
-                <!-- Item 11 -->
-                <div class="timeline-item">
-                    <div class="time-box">
-                        <span><i class="fa-regular fa-clock"></i> 4:00pm - 4:30pm</span>
-                    </div>
-                    <div class="session-info">
-                        <!-- <span class="badge-tag badge-break">Lunch Break</span> -->
-                        <h4>"Beyond White Coat: Dress, Demeanor and Workplace Etiquette in Dentistry"</h4>
-                        <div class="session-desc">Dato' Dr. Shah Kamal Khan Bin Jamal Din</div>
-                        <!-- <span class="session-location"><i class="fa-solid fa-location-dot"></i> Dining Hall</span> -->
-                    </div>
-                </div>
-
-                <!-- Item 12 -->
-                <div class="timeline-item">
-                    <div class="time-box">
-                        <span><i class="fa-regular fa-clock"></i> 4:30pm</span>
-                    </div>
-                    <div class="session-info">
-                        <!-- <span class="badge-tag badge-break">Lunch Break</span> -->
-                        <h4>Closing</h4>
-                        <!-- <div class="session-desc">Dr. Ratna Devi Sundaram</div> -->
-                        <!-- <span class="session-location"><i class="fa-solid fa-location-dot"></i> Dining Hall</span> -->
-                    </div>
-                </div>
-
-            </div>
+        <div class="footer-col">
+          <h3>The event</h3>
+          <ul>
+            <li><i class="fa-regular fa-calendar" aria-hidden="true"></i> <span>19–20 September 2026</span></li>
+            <li><i class="fa-solid fa-globe" aria-hidden="true"></i> <span>Live online</span></li>
+            <li><i class="fa-solid fa-language" aria-hidden="true"></i> <span>English</span></li>
+            <li><i class="fa-solid fa-building-columns" aria-hidden="true"></i> <span>AIMST University, Malaysia</span></li>
+          </ul>
         </div>
 
-        <!-- DAY 2 SCHEDULE PANEL -->
-        <div id="day2" class="schedule-panel">
-            <div class="date-header">
-                <h3><i class="fa-solid fa-calendar-check"></i> Day 2 — Sunday, 20 September 2026</h3>
-                <!-- <p>Focus: Social Governance, Community Health Equity & Green Innovations</p> -->
-            </div>
-
-            <div class="timeline">
-
-                <!-- Item 1 -->
-                <div class="timeline-item">
-                    <div class="time-box">
-                        <span><i class="fa-regular fa-clock"></i> 09:00am - 10:00am</span>
-                    </div>
-                    <div class="session-info">
-                        <!-- <span class="badge-tag badge-break">Registration</span> -->
-                        <h4>"A Guide to Dental Registration in Australia"</h4>
-                        <div class="session-desc">Dr. Shawn Paul & Dr. Tham</div>
-                        <!-- <span class="session-location"><i class="fa-solid fa-location-dot"></i> Main Foyer</span> -->
-                    </div>
-                </div>
-
-                <!-- Item 2 -->
-                <div class="timeline-item">
-                    <div class="time-box">
-                        <span><i class="fa-regular fa-clock"></i> 10:00am - 11:00am</span>
-                    </div>
-                    <div class="session-info">
-                        <!-- <span class="badge-tag badge-keynote">Keynote Address</span> -->
-                        <h4>"A Guide for Dental Council of New Zealand (DCNZ) Registration"</h4>
-                        <!-- <div class="speaker-name"><i class="fa-solid fa-user-doctor"></i> Guest Keynote Speaker</div> -->
-                        <div class="session-desc">Dr. Beatrice Ng Ming Ming</div>
-                        <!-- <span class="session-location"><i class="fa-solid fa-location-dot"></i> Main Auditorium</span> -->
-                    </div>
-                </div>
-
-                <!-- Item 3 -->
-                <div class="timeline-item">
-                    <div class="time-box">
-                        <span><i class="fa-regular fa-clock"></i> 11:00am - 12:00pm</span>
-                    </div>
-                    <div class="session-info">
-                        <!-- <span class="badge-tag badge-panel">Panel Discussion</span> -->
-                        <h4>"Your Roadmap to Singapore Dental Council (SDC) Registration and PG in Hong Kong"</h4>
-                        <div class="session-desc">Dr. Yeoh Eng Seng</div>
-                        <!-- <span class="session-location"><i class="fa-solid fa-location-dot"></i> Main Auditorium</span> -->
-                    </div>
-                </div>
-
-                <!-- Item 4 -->
-                <div class="timeline-item">
-                    <div class="time-box">
-                        <span><i class="fa-regular fa-clock"></i> 12:00pm - 1:00pm</span>
-                    </div>
-                    <div class="session-info">
-                        <!-- <span class="badge-tag badge-break">"Licensing and Registration in the UK"</span> -->
-                        <h4>"Licensing and Registration in the UK"</h4>
-                        <div class="session-desc">Dr. Auleep Gaunguly</div>
-                        <!-- <span class="session-location"><i class="fa-solid fa-location-dot"></i> Exhibition Hall</span> -->
-                    </div>
-                </div>
-
-                <!-- Item 5 -->
-                <div class="timeline-item">
-                    <div class="time-box">
-                        <span><i class="fa-regular fa-clock"></i> 1:00pm - 2:00pm</span>
-                    </div>
-                    <div class="session-info">
-                        <!-- <span class="badge-tag badge-panel">Workshop</span> -->
-                        <h4>Lunch break</h4>
-                        <!-- <div class="session-desc">Step-by-step guidance on running a green audit for clinical practices.</div> -->
-                        <!-- <span class="session-location"><i class="fa-solid fa-location-dot"></i> Workshop Room A</span> -->
-                    </div>
-                </div>
-
-                <!-- Item 6 -->
-                <div class="timeline-item">
-                    <div class="time-box">
-                        <span><i class="fa-regular fa-clock"></i> 2:00pm - 3:00pm</span>
-                    </div>
-                    <div class="session-info">
-                        <!-- <span class="badge-tag badge-keynote">Closing Ceremony</span> -->
-                        <h4>"U.S Licensing Pathway: A Guide to Practising Dentistry in the USA"</h4>
-                        <div class="session-desc">Dr. Suzanne</div>
-                        <!-- <span class="session-location"><i class="fa-solid fa-location-dot"></i> Main Auditorium</span> -->
-                    </div>
-                </div>
-
-                <!-- Item 7 -->
-                <div class="timeline-item">
-                    <div class="time-box">
-                        <span><i class="fa-regular fa-clock"></i> 3:00pm - 4:00pm</span>
-                    </div>
-                    <div class="session-info">
-                        <!-- <span class="badge-tag badge-keynote">Closing Ceremony</span> -->
-                        <h4>"Canadian Licensing Pathway for Dental Practice"</h4>
-                        <div class="session-desc">Dr. Shince Mathew</div>
-                        <!-- <span class="session-location"><i class="fa-solid fa-location-dot"></i> Main Auditorium</span> -->
-                    </div>
-                </div>
-
-                <!-- Item 8 -->
-                <div class="timeline-item">
-                    <div class="time-box">
-                        <span><i class="fa-regular fa-clock"></i> 4:00pm - 5:00pm</span>
-                    </div>
-                    <div class="session-info">
-                        <!-- <span class="badge-tag badge-keynote">Closing Ceremony</span> -->
-                        <h4>"Dentist as Entrepreneur"</h4>
-                        <div class="session-desc">Dr. Vinesh</div>
-                        <!-- <span class="session-location"><i class="fa-solid fa-location-dot"></i> Main Auditorium</span> -->
-                    </div>
-                </div>
-
-                <!-- Item 9 -->
-                <div class="timeline-item">
-                    <div class="time-box">
-                        <span><i class="fa-regular fa-clock"></i> 5:00pm</span>
-                    </div>
-                    <div class="session-info">
-                        <!-- <span class="badge-tag badge-keynote">Closing Ceremony</span> -->
-                        <h4>Closing</h4>
-                        <!-- <div class="session-desc">Dr. Suzanne</div> -->
-                        <!-- <span class="session-location"><i class="fa-solid fa-location-dot"></i> Main Auditorium</span> -->
-                    </div>
-                </div>
-
-            </div>
+        <div class="footer-register">
+          <h3>Reserve your place</h3>
+          <p>Early-bird registration closes 1 September 2026. Fees start from RM 100.</p>
+          <a href="registration.html" class="btn btn--accent btn--sm">View fees &amp; register <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
         </div>
+      </div>
 
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> AIMST University, Malaysia · Faculty of Dentistry</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy notice</a>
+          <a href="terms.html">Terms</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <button class="to-top" type="button" data-to-top>Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </footer>
 
-        <!-- Call to Action -->
-        <!-- <div class="cta-banner">
-            <h3>Join Us at the Conference</h3>
-            <p>Register now to attend lectures from world-class experts in sustainable dental practice.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdZ6fdMazcZ0MBY8ho8vebx5OUgsf7TGProZLQU_t_mL-uKw/viewform?usp=header" target="_blank" class="btn-cta">
-                <i class="fa-solid fa-pen-to-square"></i> Register for Conference
-            </a>
-        </div> -->
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <img src="./asset/images/aimstlogo100.png" alt="AIMST Logo">
-        <span>AIMST University, Malaysia &copy; 2026 | FOD Online Webinar</span>
-    </footer>
-
-    <!-- Tab Switching Script -->
-    <script>
-        function switchDay(dayId) {
-            // Remove active class from all buttons
-            const buttons = document.querySelectorAll('.tab-btn');
-            buttons.forEach(btn => btn.classList.remove('active'));
-
-            // Remove active class from all panels
-            const panels = document.querySelectorAll('.schedule-panel');
-            panels.forEach(panel => panel.classList.remove('active'));
-
-            // Set clicked button to active
-            event.currentTarget.classList.add('active');
-
-            // Show selected day panel
-            document.getElementById(dayId).classList.add('active');
-        }
-    </script>
-
+  <script src="js/main.js" defer></script>
 </body>
+
 </html>

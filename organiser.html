@@ -1,199 +1,355 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="assets/aimst logo favicon.png"/>
-    <meta name="description" content="Online Webinar - Organiser" />
-    <title>Organiser | Online Webinar</title>
-    <!-- Font Awesome for clean icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
 
-  <body>
-    <!-- Header Banner -->
-    <header class="banner">
-      <div class="banner-content">
-        <span class="badge">Online Webinar</span>
-        <h1>Graduation to Global Practice: You Dental Career Journey</h1>
-        <p class="subtitle">19–20 September 2026</p>
-        <div class="tagline">
-          A platform to identify your scope after graduation!
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organisers · Graduation to Global Practice Webinar</title>
+  <meta name="description" content="AIMST University's Faculty of Dentistry, Virtual Clinical Training and Dental Diary Malaysia present the Graduation to Global Practice webinar. Meet the organising committee.">
+  <meta name="theme-color" content="#0C4A3E">
+  <meta property="og:title" content="Organisers · Graduation to Global Practice">
+  <meta property="og:description" content="Hosted by AIMST University's Faculty of Dentistry, with Virtual Clinical Training and Dental Diary Malaysia.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="asset/images/partner-campus2.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var t = localStorage.getItem('fod-theme');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        d.setAttribute('data-theme', t);
+      } catch (e) {
+        d.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <div class="announce">
+    <div class="container announce__inner">
+      <p class="announce__text">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span class="announce__hide">Online webinar · 19–20 September 2026</span>
+        <span class="announce__hide" aria-hidden="true">·</span>
+        <strong><span data-countdown-inline>Early-bird now open</span></strong>
+      </p>
+      <a class="announce__link" href="registration.html">Register <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <div class="container nav-shell__inner">
+        <a href="index.html" class="brand" aria-label="AIMST Faculty of Dentistry — home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32 14.5c-4.4 0-6.1 2.1-8.8 2.1S18.9 14.5 16.5 17c-3.2 3.4-1.9 8.2-.3 12.8 1.1 3 1.6 8.7 4.1 8.7 2.4 0 1.5-5.7 3.7-5.7 2.1 0 2.3 5 4.8 5 2.4 0 2.2-7.3 3.6-7.3 1.4 0 1.5 4.8 3.3 4.8 2.5 0 3.4-5.9 4.4-8.7 1.6-4.7 2.8-9.7-.4-12.9C45.3 14.5 42 16.6 39.7 16.6S36.4 14.5 32 14.5Z" fill="#F6F3EC" />
+              <circle cx="32" cy="34" r="2.4" fill="#B1854C" />
+            </svg>
+          </span>
+          <span class="brand__text">
+            <span class="brand__name">AIMST</span>
+            <span class="brand__sub">Faculty of Dentistry</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html">Home</a></li>
+            <li><a class="nav__link is-active" aria-current="page" href="organiser.html">Organisers</a></li>
+            <li><a class="nav__link" href="speakers.html">Speakers</a></li>
+            <li><a class="nav__link" href="program.html">Programme</a></li>
+            <li><a class="nav__link" href="registration.html">Registration</a></li>
+            <li><a class="nav__link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+            <span class="theme-toggle__track" aria-hidden="true">
+              <i class="fa-solid fa-sun"></i>
+              <i class="fa-solid fa-moon"></i>
+              <span class="theme-toggle__thumb"></span>
+            </span>
+          </button>
+          <a href="registration.html" class="btn btn--primary btn--sm nav-cta">Register</a>
+          <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+            <span></span><span></span>
+          </button>
         </div>
       </div>
-    </header>
+    </div>
 
-    <!-- Navigation Bar -->
-    <nav class="nav-wrapper">
-      <ul class="navigation">
-        <li><a href="index.html">Home</a></li>
-        <li><a class="current" href="organiser.html">Organisers</a></li>
-        <li><a href="speakers.html">Speakers</a></li>
-        <li><a href="program.html">Program</a></li>
-        <li><a href="registration.html">Registration</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <nav aria-label="Mobile navigation">
+        <ul class="mobile-nav__list">
+          <li><a class="mobile-nav__link" href="index.html">Home <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link is-active" href="organiser.html">Organisers <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link" href="speakers.html">Speakers <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link" href="program.html">Programme <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link" href="registration.html">Registration <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link" href="contact.html">Contact <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+        </ul>
+      </nav>
+      <div class="mobile-nav__footer">
+        <p class="mobile-nav__meta">19–20 September 2026 · Live online</p>
+        <a href="registration.html" class="btn btn--accent btn--block">Register now <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        <a href="contact.html" class="btn btn--ghost btn--block">Contact the secretariat</a>
+      </div>
+    </div>
+  </header>
 
-    <!-- Main Content -->
-    <main class="container">
-      <h2 class="section-title">About the Organisers</h2>
+  <main id="main">
+    <section class="page-hero">
+      <div class="page-hero__bg" aria-hidden="true">
+        <img src="asset/images/partner-campus2.jpg" alt="" width="1200" height="786" fetchpriority="high">
+      </div>
+      <div class="container page-hero__inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          <span aria-current="page">Organisers</span>
+        </nav>
+        <p class="eyebrow eyebrow--light">The organisers</p>
+        <h1>Built by clinicians, <em>for the next generation.</em></h1>
+        <p class="page-hero__lede">The webinar is hosted by AIMST University's Faculty of Dentistry, with two partner organisations working at the front line of dental education and professional development.</p>
+        <div class="page-hero__meta">
+          <span><i class="fa-solid fa-building-columns" aria-hidden="true"></i> AIMST University</span>
+          <span><i class="fa-solid fa-handshake" aria-hidden="true"></i> Three partner organisations</span>
+          <span><i class="fa-solid fa-people-group" aria-hidden="true"></i> 14 committee members</span>
+        </div>
+      </div>
+    </section>
 
-      <div class="partner-stack">
+    <section class="section">
+      <div class="container">
+        <div class="partner-stack">
+          <article class="partner-card" data-reveal>
+            <div class="partner-card__media">
+              <img src="asset/images/partner-campus2.jpg" alt="University campus building and lawn" width="1200" height="786" loading="lazy">
+            </div>
+            <div class="partner-card__body">
+              <span class="partner-tag"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> Host institution</span>
+              <h3>AIMST University — Faculty of Dentistry</h3>
+              <p>AIMST University is a leading private university in Malaysia, known for its strong research culture and academic excellence across the health sciences. Its Faculty of Dentistry is committed to producing socially responsible, clinically competent dental professionals and is proud to host “Graduation to Global Practice”. The initiative provides guidance on licensing, registration pathways and professional requirements for practising in destination countries such as the UK, New Zealand and the USA.</p>
+              <div class="partner-card__highlights">
+                <span class="chip"><i class="fa-solid fa-globe" aria-hidden="true"></i> Global practice pathways</span>
+                <span class="chip"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Academic excellence</span>
+                <span class="chip"><i class="fa-solid fa-passport" aria-hidden="true"></i> Licensing guidance</span>
+              </div>
+            </div>
+          </article>
 
-            <!-- AIMST University Card -->
-            <article class="partner-card">
-                <div class="partner-media">
-                    <img src="https://i.ytimg.com/vi/474In1tzeq4/maxresdefault.jpg" alt="AIMST University Campus">
-                </div>
-                <div class="partner-content">
-                    <span class="partner-tag"><i class="fa-solid fa-building-columns"></i> Host Institution</span>
-                    <h3>AIMST University — Faculty of Dentistry</h3>
-                    <p>
-                        AIMST University, Malaysia is a leading private university known for its strong research culture and academic excellence across health sciences. Its Faculty of Dentistry is committed to producing socially responsible, clinically competent dental professionals and is proud to host the "Graduation to Global Practice" online webinar. Designed to empower dental graduates seeking international careers, this initiative provides vital guidance on licensing, registration pathways, and professional requirements for practicing in destination countries such as the UK, New Zealand, and the USA.
-                    </p>
-                    <!-- <div class="partner-highlights">
-                        <span class="highlight-chip"><i class="fa-solid fa-globe"></i> Global Practice Pathways</span>
-                        <span class="highlight-chip"><i class="fa-solid fa-graduation-cap"></i> Academic Excellence</span>
-                        <span class="highlight-chip"><i class="fa-solid fa-passport"></i> Licensing Guidance (UK, NZ, USA)</span>
-                    </div> -->
-                </div>
-            </article>
+          <article class="partner-card" data-reveal>
+            <div class="partner-card__media">
+              <img src="asset/images/partner-vct.jpg" alt="Participants joining an online clinical training session" width="1200" height="1799" loading="lazy">
+            </div>
+            <div class="partner-card__body">
+              <span class="partner-tag"><i class="fa-solid fa-laptop-medical" aria-hidden="true"></i> E-learning partner</span>
+              <h3>Virtual Clinical Training (VCT)</h3>
+              <p>VCT is a Malaysian online continuing education platform tailored for dental students and practitioners. It offers interactive virtual sessions, case discussions and specialised dental webinars — including exam mastery coaching for the MFDS and clinical webinars — to bridge theoretical knowledge and practical patient care.</p>
+              <div class="partner-card__highlights">
+                <span class="chip"><i class="fa-solid fa-video" aria-hidden="true"></i> Interactive webinars</span>
+                <span class="chip"><i class="fa-solid fa-stethoscope" aria-hidden="true"></i> Case discussions</span>
+                <span class="chip"><i class="fa-solid fa-award" aria-hidden="true"></i> MFDS exam coaching</span>
+              </div>
+            </div>
+          </article>
 
-            <!-- Virtual Clinical Training (VCT) Card -->
-            <article class="partner-card">
-                <div class="partner-media">
-                    <img src="./asset/images/Untitled.png" alt="Virtual Clinical Training Facility">
-                </div>
-                <div class="partner-content">
-                    <!-- <span class="partner-tag"><i class="fa-solid fa-laptop-medical"></i> E-Learning Partner</span> -->
-                    <h3>Virtual Clinical Training (VCT)</h3>
-                    <p>
-                        VCT is a Malaysian online continuing education platform tailored for dental students and practitioners. It offers interactive virtual sessions, case discussions, and specialized dental webinars — including exam mastery coaching for the MFDS and clinical webinars — to bridge theoretical knowledge and practical patient care.
-                    </p>
-                    <!-- <div class="partner-highlights">
-                        <span class="highlight-chip"><i class="fa-solid fa-video"></i> Interactive Webinars</span>
-                        <span class="highlight-chip"><i class="fa-solid fa-stethoscope"></i> Case Discussions</span>
-                        <span class="highlight-chip"><i class="fa-solid fa-award"></i> MFDS Exam Coaching</span>
-                    </div> -->
-                </div>
-            </article>
+          <article class="partner-card" data-reveal>
+            <div class="partner-card__media">
+              <img src="asset/images/partner-diary.jpg" alt="Clinician writing notes during a continuing professional development course" width="1200" height="800" loading="lazy">
+            </div>
+            <div class="partner-card__body">
+              <span class="partner-tag"><i class="fa-solid fa-chalkboard-user" aria-hidden="true"></i> CPD &amp; training provider</span>
+              <h3>Dental Diary Malaysia</h3>
+              <p>Dental Diary Malaysia (operating as Dental Diary Academy) is a continuing professional development and training provider for dental practitioners in Kuala Lumpur. Founded by Dr. Vinesh Raj, the academy offers hands-on clinical courses, exam coaching (such as MFDS/MFD) and specialised training webinars.</p>
+              <div class="partner-card__highlights">
+                <span class="chip"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Founded by Dr. Vinesh Raj</span>
+                <span class="chip"><i class="fa-solid fa-hands-holding" aria-hidden="true"></i> Hands-on courses</span>
+                <span class="chip"><i class="fa-solid fa-certificate" aria-hidden="true"></i> MFD / MFDS training</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-            <!-- Dental Diary Malaysia Card -->
-            <article class="partner-card">
-                <div class="partner-media">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSV21O-HiMWWY9xJIPmh1-6ckhTAFTV6EjlJRfdKA98NUirAIDd3r80cDb&s=10" alt="Kuala Lumpur Dental Academy Hub">
-                </div>
-                <div class="partner-content">
-                    <!-- <span class="partner-tag"><i class="fa-solid fa-chalkboard-user"></i> CPD & Training Provider</span> -->
-                    <h3>Dental Diary Malaysia</h3>
-                    <p>
-                        Dental Diary Malaysia (operating as Dental Diary Academy) is a continuous professional development and training provider for dental practitioners in Kuala Lumpur, Malaysia. Founded by Dr. Vinesh Raj, the academy offers hands-on clinical courses, exam coaching (such as MFDS/MFD), and specialized training webinars.
-                    </p>
-                    <!-- <div class="partner-highlights">
-                        <span class="highlight-chip"><i class="fa-solid fa-user-doctor"></i> Founded by Dr. Vinesh Raj</span>
-                        <span class="highlight-chip"><i class="fa-solid fa-hands-holding"></i> Hands-on Clinical Webinars</span>
-                        <span class="highlight-chip"><i class="fa-solid fa-certificate"></i> MFD / MFDS Training</span>
-                    </div> -->
-                </div>
-            </article>
-
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Organising committee</p>
+          <h2>The team behind the programme.</h2>
         </div>
 
-        <h2 class="section-title">Organising Committee</h2>
+        <div class="leadership">
+          <article class="lead-card" data-reveal>
+            <p class="lead-card__role"><i class="fa-solid fa-crown" aria-hidden="true"></i> Patron(s)</p>
+            <p class="lead-card__name">Prof. Dr. Ramesh Kumaresan and Vice Chancellor</p>
+          </article>
+          <article class="lead-card" data-reveal>
+            <p class="lead-card__role"><i class="fa-solid fa-user-shield" aria-hidden="true"></i> Advisor(s)</p>
+            <p class="lead-card__name">Snr. Assoc. Prof. Dr. Siva Kumar Pendyala</p>
+          </article>
+          <article class="lead-card" data-reveal>
+            <p class="lead-card__role"><i class="fa-solid fa-user-tie" aria-hidden="true"></i> Webinar / Workshop Chairperson(s)</p>
+            <p class="lead-card__name">Snr. Assoc. Prof. Dr. Jeevan Matada Basavarajaiah</p>
+          </article>
+          <article class="lead-card" data-reveal>
+            <p class="lead-card__role"><i class="fa-solid fa-user-gear" aria-hidden="true"></i> Co-Chairperson(s)</p>
+            <p class="lead-card__name">Dr. Vinesh Raj Savumthararaj</p>
+          </article>
+          <article class="lead-card" data-reveal>
+            <p class="lead-card__role"><i class="fa-solid fa-pen-nib" aria-hidden="true"></i> Secretary</p>
+            <p class="lead-card__name">Dr. Sivadas Ganapathy</p>
+          </article>
+          <article class="lead-card" data-reveal>
+            <p class="lead-card__role"><i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i> Secretariat</p>
+            <p class="lead-card__name"><a href="contact.html">Contact the organising team</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-      <!-- Executive Leadership Grid -->
-        <div class="leadership-grid">
-            <div class="lead-card">
-                <div class="lead-role"><i class="fa-solid fa-crown"></i> Patron(s)</div>
-                <div class="lead-name">Prof. Dr. Ramesh Kumaresan and Vice Chancellor</div>
-            </div>
-
-            <div class="lead-card">
-                <div class="lead-role"><i class="fa-solid fa-user-shield"></i> Advisor(s)</div>
-                <div class="lead-name">Snr. Assoc. Prof. Dr. Siva Kumar Pendyala</div>
-            </div>
-
-            <div class="lead-card">
-                <div class="lead-role"><i class="fa-solid fa-user-tie"></i> Webinar / Workshop Chairperson(s)</div>
-                <div class="lead-name">Snr. Assoc. Prof. Dr. Jeevan Matada Basavarajaiah</div>
-            </div>
-
-            <div class="lead-card">
-                <div class="lead-role"><i class="fa-solid fa-user-gear"></i> Co-Chairperson(s)</div>
-                <div class="lead-name">Dr. Vinesh Raj Savumthararaj</div>
-            </div>
-
-            <div class="lead-card">
-                <div class="lead-role"><i class="fa-solid fa-pen-nib"></i> Secretary</div>
-                <div class="lead-name">Dr. Sivadas Ganapathy</div>
-            </div>
-
-            <!-- <div class="lead-card">
-                <div class="lead-role"><i class="fa-solid fa-users-gear"></i> Joint Secretaries</div>
-                <div class="lead-name">—</div>
-            </div> -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Sub-committees &amp; task forces</p>
+          <h2>Every detail, covered.</h2>
         </div>
 
-        <!-- Sub-Committees Table Card -->
-        <div class="committee-card">
-            <div class="committee-card-header">
-                <h3><i class="fa-solid fa-sitemap"></i> Sub-Committees & Task Forces</h3>
+        <div class="committee">
+          <div class="committee-group" data-reveal>
+            <div class="committee-group__role"><i class="fa-solid fa-id-card" aria-hidden="true"></i> Registration &amp; Certificate Committee</div>
+            <div class="member-chips">
+              <span class="member-chip"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Dr. Niyas Ummer Mohammed</span>
+              <span class="member-chip"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Dr. Manu Unnikrishnan</span>
+              <span class="member-chip"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Dr. Mohammed Meera Riyaz Shafiullah</span>
+              <span class="member-chip"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Dr. Jayashree Roja</span>
+              <span class="member-chip"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Dr. Vaishnavi Vedam</span>
             </div>
+          </div>
 
-            <div class="table-wrapper">
-                <table class="committee-table">
-                    <thead>
-                        <tr>
-                            <th style="width: 35%;">Role / Committee</th>
-                            <th style="width: 65%;">Name and Designation</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><span class="role-badge"><i class="fa-solid fa-id-card"></i> Registration & Certificate Committee</span></td>
-                            <td>
-                                <div class="member-list">
-                                    <span class="member-chip"><i class="fa-solid fa-user-doctor"></i> Dr. Niyas Ummer Mohammed</span>
-                                    <span class="member-chip"><i class="fa-solid fa-user-doctor"></i> Dr. Manu Unnikrishnan</span>
-                                    <span class="member-chip"><i class="fa-solid fa-user-doctor"></i> Dr. Mohammed Meera Riyaz Shafiullah</span>
-                                    <span class="member-chip"><i class="fa-solid fa-user-doctor"></i> Dr. Jayashree Roja</span>
-                                    <span class="member-chip"><i class="fa-solid fa-user-doctor"></i> Dr. Vaishnavi Vedam</span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><span class="role-badge"><i class="fa-solid fa-laptop-code"></i> IT & Technical Support</span></td>
-                            <td>
-                                <div class="member-list">
-                                    <span class="member-chip"><i class="fa-solid fa-user-doctor"></i> Dr. Sameen RJ</span>
-                                    <span class="member-chip"><i class="fa-solid fa-user-doctor"></i> Dr. Gokulapriyan Karuppiah</span>
-                                    <span class="member-chip"><i class="fa-solid fa-user"></i> Mr. Navin</span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><span class="role-badge"><i class="fa-solid fa-utensils"></i> Food Committee</span></td>
-                            <td>
-                                <div class="member-list">
-                                    <span class="member-chip"><i class="fa-solid fa-user"></i> Pn. Saroja</span>
-                                    <span class="member-chip"><i class="fa-solid fa-user"></i> Ms. Kavetha</span>
-                                    <span class="member-chip"><i class="fa-solid fa-user"></i> Ms. Manju</span>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+          <div class="committee-group" data-reveal>
+            <div class="committee-group__role"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i> IT &amp; Technical Support</div>
+            <div class="member-chips">
+              <span class="member-chip"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Dr. Sameen RJ</span>
+              <span class="member-chip"><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> Dr. Gokulapriyan Karuppiah</span>
+              <span class="member-chip"><i class="fa-solid fa-user" aria-hidden="true"></i> Mr. Navin</span>
             </div>
+          </div>
+
+          <div class="committee-group" data-reveal>
+            <div class="committee-group__role"><i class="fa-solid fa-utensils" aria-hidden="true"></i> Food Committee</div>
+            <div class="member-chips">
+              <span class="member-chip"><i class="fa-solid fa-user" aria-hidden="true"></i> Pn. Saroja</span>
+              <span class="member-chip"><i class="fa-solid fa-user" aria-hidden="true"></i> Ms. Kavetha</span>
+              <span class="member-chip"><i class="fa-solid fa-user" aria-hidden="true"></i> Ms. Manju</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--flush-top">
+      <div class="container">
+        <div class="cta-band cta-band--inset">
+          <div class="cta-band__bg" aria-hidden="true">
+            <img src="asset/images/about-team2.jpg" alt="" width="1400" height="933" loading="lazy">
+          </div>
+          <div class="cta-band__inner">
+            <h2>Join us for <em>both days.</em></h2>
+            <div class="cta-band__side">
+              <p>One registration covers the full programme, live Q&amp;A and a digital certificate of attendance.</p>
+              <div class="cta-band__actions">
+                <a href="registration.html" class="btn btn--accent">Register now <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                <a href="speakers.html" class="btn btn--ghost-light">Meet the speakers</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand" aria-label="AIMST Faculty of Dentistry — home">
+            <span class="brand__mark" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 14.5c-4.4 0-6.1 2.1-8.8 2.1S18.9 14.5 16.5 17c-3.2 3.4-1.9 8.2-.3 12.8 1.1 3 1.6 8.7 4.1 8.7 2.4 0 1.5-5.7 3.7-5.7 2.1 0 2.3 5 4.8 5 2.4 0 2.2-7.3 3.6-7.3 1.4 0 1.5 4.8 3.3 4.8 2.5 0 3.4-5.9 4.4-8.7 1.6-4.7 2.8-9.7-.4-12.9C45.3 14.5 42 16.6 39.7 16.6S36.4 14.5 32 14.5Z" fill="#F6F3EC" />
+                <circle cx="32" cy="34" r="2.4" fill="#B1854C" />
+              </svg>
+            </span>
+            <span class="brand__text">
+              <span class="brand__name">AIMST</span>
+              <span class="brand__sub">Faculty of Dentistry</span>
+            </span>
+          </a>
+          <p>An online webinar guiding dental graduates from Malaysian registration to licensed practice around the world.</p>
+          <div class="footer-socials">
+            <a class="social-btn" href="https://www.facebook.com/aimst2u/" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a class="social-btn" href="https://www.instagram.com/aimstuniversity/" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a class="social-btn" href="https://my.linkedin.com/school/aimst-university2001/" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            <a class="social-btn" href="https://www.youtube.com/@aimstuniversityaimst2u" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+          </div>
         </div>
 
-    </main>
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="organiser.html">Organisers</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="program.html">Programme</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
 
-    <!-- Footer -->
-    <footer>
-      <img src="./asset/images/aimstlogo100.png" alt="AIMST Logo" />
-      <span>AIMST University, Malaysia &copy; 2026 | FOD Online Webinar</span>
-    </footer>
-  </body>
+        <div class="footer-col">
+          <h3>The event</h3>
+          <ul>
+            <li><i class="fa-regular fa-calendar" aria-hidden="true"></i> <span>19–20 September 2026</span></li>
+            <li><i class="fa-solid fa-globe" aria-hidden="true"></i> <span>Live online</span></li>
+            <li><i class="fa-solid fa-language" aria-hidden="true"></i> <span>English</span></li>
+            <li><i class="fa-solid fa-building-columns" aria-hidden="true"></i> <span>AIMST University, Malaysia</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-register">
+          <h3>Reserve your place</h3>
+          <p>Early-bird registration closes 1 September 2026. Fees start from RM 100.</p>
+          <a href="registration.html" class="btn btn--accent btn--sm">View fees &amp; register <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> AIMST University, Malaysia · Faculty of Dentistry</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy notice</a>
+          <a href="terms.html">Terms</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <button class="to-top" type="button" data-to-top>Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+
 </html>

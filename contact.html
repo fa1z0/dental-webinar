@@ -1,180 +1,347 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="assets/aimst logo favicon.png"/>
-    <meta name="description" content="Online Webinar - Contact Us" />
-    <title>Contact Us | Online Webinar</title>
-    <!-- Font Awesome for clean icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
 
-  <body>
-    <!-- Header Banner -->
-    <header class="banner">
-      <div class="banner-content">
-        <span class="badge">Online Webinar</span>
-        <h1>Graduation to Global Practice: You Dental Career Journey</h1>
-        <p class="subtitle">19–20 September 2026</p>
-        <div class="tagline">
-          A platform to identify your scope after graduation!
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact · Graduation to Global Practice Webinar</title>
+  <meta name="description" content="Contact the AIMST Faculty of Dentistry webinar secretariat for general enquiries, registration support and payment questions. Reach Dr. Jeevan M B, Dr. Vinesh and Dr. Niyas Ummer Mohammed.">
+  <meta name="theme-color" content="#0C4A3E">
+  <meta property="og:title" content="Contact · Graduation to Global Practice">
+  <meta property="og:description" content="Speak to the organising secretariat about registration, fees or the programme. Live online, 19–20 September 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="asset/images/about-team2.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var t = localStorage.getItem('fod-theme');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        d.setAttribute('data-theme', t);
+      } catch (e) {
+        d.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <div class="announce">
+    <div class="container announce__inner">
+      <p class="announce__text">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span class="announce__hide">Online webinar · 19–20 September 2026</span>
+        <span class="announce__hide" aria-hidden="true">·</span>
+        <strong><span data-countdown-inline>Early-bird now open</span></strong>
+      </p>
+      <a class="announce__link" href="registration.html">Register <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <div class="container nav-shell__inner">
+        <a href="index.html" class="brand" aria-label="AIMST Faculty of Dentistry — home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32 14.5c-4.4 0-6.1 2.1-8.8 2.1S18.9 14.5 16.5 17c-3.2 3.4-1.9 8.2-.3 12.8 1.1 3 1.6 8.7 4.1 8.7 2.4 0 1.5-5.7 3.7-5.7 2.1 0 2.3 5 4.8 5 2.4 0 2.2-7.3 3.6-7.3 1.4 0 1.5 4.8 3.3 4.8 2.5 0 3.4-5.9 4.4-8.7 1.6-4.7 2.8-9.7-.4-12.9C45.3 14.5 42 16.6 39.7 16.6S36.4 14.5 32 14.5Z" fill="#F6F3EC" />
+              <circle cx="32" cy="34" r="2.4" fill="#B1854C" />
+            </svg>
+          </span>
+          <span class="brand__text">
+            <span class="brand__name">AIMST</span>
+            <span class="brand__sub">Faculty of Dentistry</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html">Home</a></li>
+            <li><a class="nav__link" href="organiser.html">Organisers</a></li>
+            <li><a class="nav__link" href="speakers.html">Speakers</a></li>
+            <li><a class="nav__link" href="program.html">Programme</a></li>
+            <li><a class="nav__link" href="registration.html">Registration</a></li>
+            <li><a class="nav__link is-active" aria-current="page" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+            <span class="theme-toggle__track" aria-hidden="true">
+              <i class="fa-solid fa-sun"></i>
+              <i class="fa-solid fa-moon"></i>
+              <span class="theme-toggle__thumb"></span>
+            </span>
+          </button>
+          <a href="registration.html" class="btn btn--primary btn--sm nav-cta">Register</a>
+          <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+            <span></span><span></span>
+          </button>
         </div>
       </div>
-    </header>
+    </div>
 
-    <!-- Navigation Bar -->
-    <nav class="nav-wrapper">
-      <ul class="navigation">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="organiser.html">Organisers</a></li>
-        <li><a href="speakers.html">Speakers</a></li>
-        <li><a href="program.html">Program</a></li>
-        <li><a href="registration.html">Registration</a></li>
-        <li><a class="current" href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="container">
-      <h2 class="section-title">Get in Touch</h2>
-
-      <div class="contact-grid">
-        <!-- Organizing Chairperson -->
-        <div class="card">
-          <div class="card-header">
-            <i class="fa-solid fa-user-tie"></i>
-            <h3>General Inquiries</h3>
-          </div>
-          <p style="font-size: 1rem; color: #64748b; margin-bottom: 1rem">
-            For general details, please contact
-          </p>
-          <div class="person-name">Dr. Jeevan M B</div>
-          <i class="fa-solid fa-phone faah"></i> +604-4298000 (Ext: 8534)
-          <div class="person-name">Dr. Vinesh</div>
-          <i class="fa-solid fa-phone faah"></i> +6011-23309539
-          <!-- <div class="btn-group">
-                    <a href="https://wa.me/60172604202" target="_blank" class="btn btn-whatsapp">
-                        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
-                    </a>
-                </div> -->
-        </div>
-
-        <!-- Organizing Co-Chairperson -->
-        <div class="card">
-                <div class="card-header">
-                    <i class="fa-solid fa-user-plus"></i>
-                    <h3>For registration-related</h3>
-                </div>
-                <div class="person-name">Dr. Niyas Ummer Mohammed</div>
-                <i class="fa-solid fa-phone faah"></i> +6017-8511044
-                <!-- <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 1rem;">For registration & payment inquiries</p> -->
-                
-                <!-- <div class="btn-group">
-                    <a href="https://wa.me/60129848409" target="_blank" class="btn btn-whatsapp">
-                        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
-                    </a>
-                </div> -->
-            </div>
-      </div>
-
-      <!-- Official Links & Email Block -->
-      <div class="card" style="margin-bottom: 2rem">
-        <div class="card-header">
-          <i class="fa-solid fa-paper-plane"></i>
-          <h3>Official Conference Channels</h3>
-        </div>
-
-        <ul class="info-list">
-          <li>
-            <i class="fa-solid fa-envelope"></i>
-            <div>
-              <strong>Email Us:</strong><br />
-              <a href="mailto:aimstdentalcareer@gmail.com"
-                >aimstdentalcareer@gmail.com</a
-              >
-            </div>
-          </li>
-          <li>
-            <i class="fa-solid fa-globe"></i>
-            <div>
-              <strong>AIMST Website:</strong><br />
-              <a href="https://www.aimst.edu.my/" target="_blank"
-                >www.aimst.edu.my</a
-              >
-            </div>
-          </li>
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <nav aria-label="Mobile navigation">
+        <ul class="mobile-nav__list">
+          <li><a class="mobile-nav__link" href="index.html">Home <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link" href="organiser.html">Organisers <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link" href="speakers.html">Speakers <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link" href="program.html">Programme <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link" href="registration.html">Registration <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link is-active" href="contact.html">Contact <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
         </ul>
+      </nav>
+      <div class="mobile-nav__footer">
+        <p class="mobile-nav__meta">19–20 September 2026 · Live online</p>
+        <a href="registration.html" class="btn btn--accent btn--block">Register now <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        <a href="mailto:aimstdentalcareer@gmail.com" class="btn btn--ghost btn--block">Email the secretariat</a>
+      </div>
+    </div>
+  </header>
 
-        <div
-          class="btn-group"
-          style="
-            margin-top: 1.5rem;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            display: grid;
-          "
-        >
-          <a
-            href="https://forms.gle/yitCFHiumkZ3yNJd8"
-            target="_blank"
-            class="btn btn-primary"
-          >
-            <i class="fa-solid fa-pen-to-square"></i> Registration Form
+  <main id="main">
+    <section class="page-hero">
+      <div class="page-hero__bg" aria-hidden="true">
+        <img src="asset/images/about-team2.jpg" alt="" width="1400" height="933" fetchpriority="high">
+      </div>
+      <div class="container page-hero__inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          <span aria-current="page">Contact</span>
+        </nav>
+        <p class="eyebrow eyebrow--light">The secretariat</p>
+        <h1>We are here to <em>help you register.</em></h1>
+        <p class="page-hero__lede">Questions about the programme, fees, group registration or payment? Reach the organising team directly — we usually reply within one working day.</p>
+        <div class="page-hero__meta">
+          <span><i class="fa-solid fa-envelope" aria-hidden="true"></i> aimstdentalcareer@gmail.com</span>
+          <span><i class="fa-solid fa-phone" aria-hidden="true"></i> +60 17-851 1044</span>
+          <span><i class="fa-regular fa-clock" aria-hidden="true"></i> Mon–Fri, 9am–5pm (MYT)</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="container contact-layout">
+      <div class="contact-side">
+        <div class="contact-cards">
+          <article class="contact-card" data-reveal>
+            <div class="contact-card__head">
+              <span class="contact-card__icon"><i class="fa-solid fa-user-tie" aria-hidden="true"></i></span>
+              <h3>General enquiries</h3>
+            </div>
+            <p class="contact-person">Dr. Jeevan M B</p>
+            <p class="contact-line"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Chairperson, webinar</p>
+            <p class="contact-line"><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+6044298000">+604-429 8000</a> <span>ext. 8534</span></p>
+
+            <p class="contact-person">Dr. Vinesh</p>
+            <p class="contact-line"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Co-chairperson</p>
+            <p class="contact-line"><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+601123309539">+60 11-2330 9539</a></p>
+          </article>
+
+          <article class="contact-card" data-reveal>
+            <div class="contact-card__head">
+              <span class="contact-card__icon"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i></span>
+              <h3>Registration &amp; payment</h3>
+            </div>
+            <p class="contact-person">Dr. Niyas Ummer Mohammed</p>
+            <p class="contact-line"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Registration committee</p>
+            <p class="contact-line"><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+60178511044">+60 17-851 1044</a></p>
+            <p class="contact-line"><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:aimstdentalcareer@gmail.com">aimstdentalcareer@gmail.com</a></p>
+            <p class="contact-line"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> <span>Fees, receipts and certificates</span></p>
+          </article>
+        </div>
+
+        <div class="channels" data-reveal>
+          <h3>Official conference channels</h3>
+          <div class="channel">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:aimstdentalcareer@gmail.com">aimstdentalcareer@gmail.com</a>
+            </div>
+          </div>
+          <div class="channel">
+            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+            <div>
+              <strong>University website</strong>
+              <a href="https://www.aimst.edu.my/" target="_blank" rel="noopener noreferrer">www.aimst.edu.my</a>
+            </div>
+          </div>
+          <div class="channel">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <div>
+              <strong>Campus</strong>
+              <span>AIMST University, Jalan Bedong–Semeling, 08100 Bedong, Kedah, Malaysia</span>
+            </div>
+          </div>
+          <div class="channel">
+            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            <div>
+              <strong>Registration form</strong>
+              <a href="https://forms.gle/yitCFHiumkZ3yNJd8" target="_blank" rel="noopener noreferrer">Open the online form</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="channels" data-reveal>
+          <h3>Connect with AIMST University</h3>
+          <div class="socials">
+            <a class="social-btn" href="https://www.facebook.com/aimst2u/" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a class="social-btn" href="https://www.instagram.com/aimstuniversity/" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a class="social-btn" href="https://my.linkedin.com/school/aimst-university2001/" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            <a class="social-btn" href="https://www.youtube.com/@aimstuniversityaimst2u" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card" data-reveal>
+        <h2>Send a message.</h2>
+        <p>Complete the form and your email app will open with the message ready to send to the secretariat.</p>
+
+        <form class="form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Full name <span>*</span></label>
+            <input class="input" id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" required>
+            <span class="field__error">Please enter your name.</span>
+          </div>
+
+          <div class="field">
+            <label for="email">Email address <span>*</span></label>
+            <input class="input" id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            <span class="field__error">Please enter a valid email address.</span>
+          </div>
+
+          <div class="field field--full">
+            <label for="topic">What is your enquiry about? <span>*</span></label>
+            <select class="select" id="topic" name="topic" required>
+              <option value="" selected disabled>Choose a topic</option>
+              <option value="Registration &amp; fees">Registration &amp; fees</option>
+              <option value="Payment or receipt">Payment or receipt</option>
+              <option value="Programme &amp; sessions">Programme &amp; sessions</option>
+              <option value="Group registration">Group registration</option>
+              <option value="Accessibility or special requirements">Accessibility or special requirements</option>
+              <option value="Other">Other</option>
+            </select>
+            <span class="field__error">Please choose a topic.</span>
+          </div>
+
+          <div class="field field--full">
+            <label for="message">Message <span>*</span></label>
+            <textarea class="textarea" id="message" name="message" placeholder="Tell us what you need help with — include your registration reference if you have one." required></textarea>
+            <span class="field__error">Please tell us how we can help.</span>
+          </div>
+
+          <p class="form__note">We use your details only to respond to this enquiry. See our <a href="privacy.html">privacy notice</a>.</p>
+
+          <div class="form__footer">
+            <button class="btn btn--accent" type="submit">Send message <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+            <a class="link-arrow" href="registration.html">Register instead <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+
+          <div class="form__status" id="formStatus" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-band cta-band--inset">
+          <div class="cta-band__bg" aria-hidden="true">
+            <img src="asset/images/cta-clinic.jpg" alt="" width="1600" height="1067" loading="lazy">
+          </div>
+          <div class="cta-band__inner">
+            <h2>Ready when <em>you are.</em></h2>
+            <div class="cta-band__side">
+              <p>Registration takes about two minutes. Early-bird rates close on 1 September 2026.</p>
+              <div class="cta-band__actions">
+                <a href="https://forms.gle/yitCFHiumkZ3yNJd8" target="_blank" rel="noopener noreferrer" class="btn btn--accent">Open registration form <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                <a href="program.html" class="btn btn--ghost-light">View the programme</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer site-footer--flush">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand" aria-label="AIMST Faculty of Dentistry — home">
+            <span class="brand__mark" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 14.5c-4.4 0-6.1 2.1-8.8 2.1S18.9 14.5 16.5 17c-3.2 3.4-1.9 8.2-.3 12.8 1.1 3 1.6 8.7 4.1 8.7 2.4 0 1.5-5.7 3.7-5.7 2.1 0 2.3 5 4.8 5 2.4 0 2.2-7.3 3.6-7.3 1.4 0 1.5 4.8 3.3 4.8 2.5 0 3.4-5.9 4.4-8.7 1.6-4.7 2.8-9.7-.4-12.9C45.3 14.5 42 16.6 39.7 16.6S36.4 14.5 32 14.5Z" fill="#F6F3EC" />
+                <circle cx="32" cy="34" r="2.4" fill="#B1854C" />
+              </svg>
+            </span>
+            <span class="brand__text">
+              <span class="brand__name">AIMST</span>
+              <span class="brand__sub">Faculty of Dentistry</span>
+            </span>
           </a>
-          <!-- <a href="https://map.mcpayment.net/qrpay/pay/a87d6692-0dab-484e-9988-45f43254d22d" target="_blank" class="btn btn-outline">
-                    <i class="fa-solid fa-credit-card"></i> Payment Gateway
-                </a> -->
+          <p>An online webinar guiding dental graduates from Malaysian registration to licensed practice around the world.</p>
+          <div class="footer-socials">
+            <a class="social-btn" href="https://www.facebook.com/aimst2u/" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a class="social-btn" href="https://www.instagram.com/aimstuniversity/" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a class="social-btn" href="https://my.linkedin.com/school/aimst-university2001/" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            <a class="social-btn" href="https://www.youtube.com/@aimstuniversityaimst2u" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="organiser.html">Organisers</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="program.html">Programme</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>The event</h3>
+          <ul>
+            <li><i class="fa-regular fa-calendar" aria-hidden="true"></i> <span>19–20 September 2026</span></li>
+            <li><i class="fa-solid fa-globe" aria-hidden="true"></i> <span>Live online</span></li>
+            <li><i class="fa-solid fa-language" aria-hidden="true"></i> <span>English</span></li>
+            <li><i class="fa-solid fa-building-columns" aria-hidden="true"></i> <span>AIMST University, Malaysia</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-register">
+          <h3>Reserve your place</h3>
+          <p>Early-bird registration closes 1 September 2026. Fees start from RM 100.</p>
+          <a href="registration.html" class="btn btn--accent btn--sm">View fees &amp; register <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
         </div>
       </div>
 
-      <!-- Social Media Connect -->
-      <div class="social-section">
-        <h4>Connect with AIMST University</h4>
-        <div class="social-links">
-          <a
-            href="https://www.facebook.com/aimst2u/"
-            target="_blank"
-            class="social-icon"
-            title="Facebook"
-            ><i class="fa-brands fa-facebook-f"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/aimstuniversity/"
-            target="_blank"
-            class="social-icon"
-            title="Instagram"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a
-            href="https://my.linkedin.com/school/aimst-university2001/"
-            target="_blank"
-            class="social-icon"
-            title="LinkedIn"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-          <!-- <a
-            href="https://x.com/"
-            target="_blank"
-            class="social-icon"
-            title="X (Twitter)"
-            ><i class="fa-brands fa-x-twitter"></i
-          ></a> -->
-          <a
-            href="https://www.youtube.com/@aimstuniversityaimst2u"
-            target="_blank"
-            class="social-icon"
-            title="YouTube"
-            ><i class="fa-brands fa-youtube"></i
-          ></a>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> AIMST University, Malaysia · Faculty of Dentistry</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy notice</a>
+          <a href="terms.html">Terms</a>
+          <a href="contact.html">Contact</a>
         </div>
+        <button class="to-top" type="button" data-to-top>Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
       </div>
-    </main>
+    </div>
+  </footer>
 
-    <!-- Footer -->
-    <footer>
-      <img src="./asset/images/aimstlogo100.png" alt="AIMST Logo" />
-      <span>AIMST University, Malaysia &copy; 2026 | FOD Online Webinar</span>
-    </footer>
-  </body>
+  <script src="js/main.js" defer></script>
+</body>
+
 </html>

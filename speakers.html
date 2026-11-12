@@ -1,492 +1,536 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="assets/aimst logo favicon.png"/>
-    <meta name="description" content="Online Webinar - Speakers" />
-    <title>Speakers | Online Webinar</title>
-    <!-- Font Awesome for clean icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speakers · Graduation to Global Practice Webinar</title>
+  <meta name="description" content="Meet the 14 dental practitioners, regulators and educators speaking at the AIMST Faculty of Dentistry webinar — from Malaysia to the UK, USA, Canada, Australia, New Zealand, Singapore and Hong Kong.">
+  <meta name="theme-color" content="#0C4A3E">
+  <meta property="og:title" content="Speakers · Graduation to Global Practice">
+  <meta property="og:description" content="14 speakers across 8 countries covering Malaysian registration, specialty postings, practice ownership and international licensing.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="asset/images/hero-alt1.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var t = localStorage.getItem('fod-theme');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        d.setAttribute('data-theme', t);
+      } catch (e) {
+        d.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
 
-    <!-- Header Banner -->
-    <header class="banner">
-      <div class="banner-content">
-        <span class="badge">Online Webinar</span>
-        <h1>Graduation to Global Practice: You Dental Career Journey</h1>
-        <p class="subtitle">19–20 September 2026</p>
-        <div class="tagline">
-          A platform to identify your scope after graduation!
+  <div class="announce">
+    <div class="container announce__inner">
+      <p class="announce__text">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span class="announce__hide">Online webinar · 19–20 September 2026</span>
+        <span class="announce__hide" aria-hidden="true">·</span>
+        <strong><span data-countdown-inline>Early-bird now open</span></strong>
+      </p>
+      <a class="announce__link" href="registration.html">Register <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <div class="container nav-shell__inner">
+        <a href="index.html" class="brand" aria-label="AIMST Faculty of Dentistry — home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32 14.5c-4.4 0-6.1 2.1-8.8 2.1S18.9 14.5 16.5 17c-3.2 3.4-1.9 8.2-.3 12.8 1.1 3 1.6 8.7 4.1 8.7 2.4 0 1.5-5.7 3.7-5.7 2.1 0 2.3 5 4.8 5 2.4 0 2.2-7.3 3.6-7.3 1.4 0 1.5 4.8 3.3 4.8 2.5 0 3.4-5.9 4.4-8.7 1.6-4.7 2.8-9.7-.4-12.9C45.3 14.5 42 16.6 39.7 16.6S36.4 14.5 32 14.5Z" fill="#F6F3EC" />
+              <circle cx="32" cy="34" r="2.4" fill="#B1854C" />
+            </svg>
+          </span>
+          <span class="brand__text">
+            <span class="brand__name">AIMST</span>
+            <span class="brand__sub">Faculty of Dentistry</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html">Home</a></li>
+            <li><a class="nav__link" href="organiser.html">Organisers</a></li>
+            <li><a class="nav__link is-active" aria-current="page" href="speakers.html">Speakers</a></li>
+            <li><a class="nav__link" href="program.html">Programme</a></li>
+            <li><a class="nav__link" href="registration.html">Registration</a></li>
+            <li><a class="nav__link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+            <span class="theme-toggle__track" aria-hidden="true">
+              <i class="fa-solid fa-sun"></i>
+              <i class="fa-solid fa-moon"></i>
+              <span class="theme-toggle__thumb"></span>
+            </span>
+          </button>
+          <a href="registration.html" class="btn btn--primary btn--sm nav-cta">Register</a>
+          <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+            <span></span><span></span>
+          </button>
         </div>
       </div>
-    </header>
+    </div>
 
-    <!-- Navigation Bar -->
-    <nav class="nav-wrapper">
-        <ul class="navigation">
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <nav aria-label="Mobile navigation">
+        <ul class="mobile-nav__list">
+          <li><a class="mobile-nav__link" href="index.html">Home <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link" href="organiser.html">Organisers <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link is-active" href="speakers.html">Speakers <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link" href="program.html">Programme <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link" href="registration.html">Registration <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link" href="contact.html">Contact <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+        </ul>
+      </nav>
+      <div class="mobile-nav__footer">
+        <p class="mobile-nav__meta">19–20 September 2026 · Live online</p>
+        <a href="registration.html" class="btn btn--accent btn--block">Register now <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        <a href="contact.html" class="btn btn--ghost btn--block">Contact the secretariat</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="page-hero__bg" aria-hidden="true">
+        <img src="asset/images/hero-alt1.jpg" alt="" width="1600" height="1069" fetchpriority="high">
+      </div>
+      <div class="container page-hero__inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          <span aria-current="page">Speakers</span>
+        </nav>
+        <p class="eyebrow eyebrow--light">The speaker panel</p>
+        <h1>Learn from people who have <em>made the move.</em></h1>
+        <p class="page-hero__lede">Regulators, specialists, practice owners and clinicians working across eight countries — each session is a first-hand account of the pathway it describes.</p>
+        <div class="page-hero__meta">
+          <span><i class="fa-solid fa-user-doctor" aria-hidden="true"></i> 14 speakers</span>
+          <span><i class="fa-solid fa-earth-americas" aria-hidden="true"></i> 8 countries</span>
+          <span><i class="fa-regular fa-calendar" aria-hidden="true"></i> 19–20 September 2026</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="filter-bar">
+      <div class="container filter-bar__inner" data-tabs>
+        <div class="tabs" role="tablist" aria-label="Filter speakers by day">
+          <button class="tab is-active" type="button" role="tab" aria-selected="true" data-tab="all" aria-controls="speakers-day1 speakers-day2">
+            <i class="fa-solid fa-users" aria-hidden="true"></i> All speakers
+          </button>
+          <button class="tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-tab="day1" aria-controls="speakers-day1">
+            Day 1 · 19 Sept
+          </button>
+          <button class="tab" type="button" role="tab" aria-selected="false" tabindex="-1" data-tab="day2" aria-controls="speakers-day2">
+            Day 2 · 20 Sept
+          </button>
+        </div>
+        <p class="filter-count"><strong data-visible-count>14</strong> speakers</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Day 1 -->
+      <section id="speakers-day1" data-panel="day1" aria-label="Day 1 speakers">
+        <div class="speaker-intro" data-reveal>
+          <div>
+            <p class="eyebrow">Day 1 · Saturday, 19 September 2026</p>
+            <h2>Practice, regulation and ownership.</h2>
+          </div>
+          <p>Seven sessions on building a career at home — from MDC registration and specialty postings to opening your own clinic.</p>
+        </div>
+
+        <div class="speakers-grid">
+          <article class="speaker-card" data-reveal>
+            <div class="speaker-media">
+              <img src="asset/images/dr-syakirin.jpg" alt="Dr. Nurul Syakirin Binti Abdul Shukor" width="200" height="241" loading="lazy">
+              <div class="speaker-badges">
+                <span class="speaker-region"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Malaysia</span>
+                <span class="speaker-day">Day 1</span>
+              </div>
+            </div>
+            <div class="speaker-body">
+              <h3 class="speaker-name">Dr. Nurul Syakirin Binti Abdul Shukor</h3>
+              <p class="speaker-creds">Dental Public Health Specialist</p>
+              <p class="speaker-inst"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> Secretary, Malaysian Dental Council</p>
+              <div class="speaker-topic">
+                <span class="speaker-topic__label">Session</span>
+                <p class="speaker-topic__title">Practising Dentistry in Malaysia — What You Need to Know</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="speaker-card" data-reveal>
+            <div class="speaker-media">
+              <img src="asset/images/dr-ling.jpg" alt="Dr. Ling Xiao Feng" width="225" height="225" loading="lazy">
+              <div class="speaker-badges">
+                <span class="speaker-region"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> International</span>
+                <span class="speaker-day">Day 1</span>
+              </div>
+            </div>
+            <div class="speaker-body">
+              <h3 class="speaker-name">Dr. Ling Xiao Feng</h3>
+              <p class="speaker-creds">BDS, MDS Oral &amp; Maxillofacial Surgery, MFDS (RCS), IBCSOMS (USA)</p>
+              <p class="speaker-inst"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> International Dental Federation (FDI)</p>
+              <div class="speaker-topic">
+                <span class="speaker-topic__label">Session</span>
+                <p class="speaker-topic__title">Speciality Posting at a Glance: Oral &amp; Maxillofacial Surgery</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="speaker-card" data-reveal>
+            <div class="speaker-media">
+              <img src="asset/images/dr-adilah.jpg" alt="Dr. Nur'adilah Binti Ahmad Othman" width="158" height="241" loading="lazy">
+              <div class="speaker-badges">
+                <span class="speaker-region"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Malaysia</span>
+                <span class="speaker-day">Day 1</span>
+              </div>
+            </div>
+            <div class="speaker-body">
+              <h3 class="speaker-name">Dr. Nur'adilah Binti Ahmad Othman</h3>
+              <p class="speaker-creds">BDS, DClin Dent (Paediatric Dentistry)</p>
+              <p class="speaker-inst"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> Head of Paediatric Dentistry, Hospital Sultanah Bahiyah</p>
+              <div class="speaker-topic">
+                <span class="speaker-topic__label">Session</span>
+                <p class="speaker-topic__title">Speciality Posting at a Glance: Paediatric Dentistry</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="speaker-card" data-reveal>
+            <div class="speaker-media">
+              <img src="asset/images/dr-ratna.jpg" alt="Dr. Ratna Devi Sundaram" width="707" height="434" loading="lazy">
+              <div class="speaker-badges">
+                <span class="speaker-region"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Malaysia</span>
+                <span class="speaker-day">Day 1</span>
+              </div>
+            </div>
+            <div class="speaker-body">
+              <h3 class="speaker-name">Dr. Ratna Devi Sundaram</h3>
+              <p class="speaker-creds">BDS, Dip. Orthodontics (AFO New York)</p>
+              <p class="speaker-inst"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> Dental Surgeon, Entrepreneur, CEO &amp; Co-Founder, Mediwira Group Holdings</p>
+              <div class="speaker-topic">
+                <span class="speaker-topic__label">Session</span>
+                <p class="speaker-topic__title">From Graduate to Practice Owner: Setting Up Your Dental Clinic</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="speaker-card" data-reveal>
+            <div class="speaker-media">
+              <img src="asset/images/dr-ashwin.jpg" alt="Major Dr. Ashwin Nathan" width="230" height="241" loading="lazy">
+              <div class="speaker-badges">
+                <span class="speaker-region"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Malaysia</span>
+                <span class="speaker-day">Day 1</span>
+              </div>
+            </div>
+            <div class="speaker-body">
+              <h3 class="speaker-name">Maj. Dr. Ashwin Nathan</h3>
+              <p class="speaker-creds">BDS, MFDS RCSed</p>
+              <p class="speaker-inst"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> Dental Officer, Malaysian Armed Forces</p>
+              <div class="speaker-topic">
+                <span class="speaker-topic__label">Session</span>
+                <p class="speaker-topic__title">Towards the Career You Always Wanted — Armed Forces</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="speaker-card" data-reveal>
+            <div class="speaker-media">
+              <img src="asset/images/dr-hamidie.jpg" alt="Dr. Muhammad Hamidie Saari" width="163" height="241" loading="lazy">
+              <div class="speaker-badges">
+                <span class="speaker-region"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Malaysia</span>
+                <span class="speaker-day">Day 1</span>
+              </div>
+            </div>
+            <div class="speaker-body">
+              <h3 class="speaker-name">Dr. Muhammad Hamidie Saari</h3>
+              <p class="speaker-creds">BDS, Doctor of Dental Public Health</p>
+              <p class="speaker-inst"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> Dental Public Health Specialist</p>
+              <div class="speaker-topic">
+                <span class="speaker-topic__label">Session</span>
+                <p class="speaker-topic__title">Towards the Career You Always Wanted — Ministry of Health</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="speaker-card" data-reveal>
+            <div class="speaker-media">
+              <img src="asset/images/dato-dr-shah-kamal.jpg" alt="Dato' Dr. Shah Kamal Khan Bin Jamal Din" width="185" height="241" loading="lazy">
+              <div class="speaker-badges">
+                <span class="speaker-region"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Malaysia</span>
+                <span class="speaker-day">Day 1</span>
+              </div>
+            </div>
+            <div class="speaker-body">
+              <h3 class="speaker-name">Dato' Dr. Shah Kamal Khan Bin Jamal Din</h3>
+              <p class="speaker-creds">MBBS, BDS, FDSRCPS Glasgow, Cert. OMFR Reconstructive Microvascular Surgery</p>
+              <p class="speaker-inst"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> Senior Consultant in Oral &amp; Maxillofacial Surgery, AIMST University</p>
+              <div class="speaker-topic">
+                <span class="speaker-topic__label">Session</span>
+                <p class="speaker-topic__title">Beyond the White Coat: Dress, Demeanour and Workplace Etiquette in Dentistry</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Day 2 -->
+      <section id="speakers-day2" data-panel="day2" aria-label="Day 2 speakers">
+        <div class="speaker-intro" data-reveal>
+          <div>
+            <p class="eyebrow">Day 2 · Sunday, 20 September 2026</p>
+            <h2>The world is your practice.</h2>
+          </div>
+          <p>Seven sessions on licensing, registration and building a career beyond Malaysia — the UK, USA, Canada, Australia, New Zealand, Singapore and Hong Kong.</p>
+        </div>
+
+        <div class="speakers-grid">
+          <article class="speaker-card" data-reveal>
+            <div class="speaker-media">
+              <img src="asset/images/dr-auleep.jpg" alt="Dr. Auleep Ganguly" width="447" height="447" loading="lazy">
+              <div class="speaker-badges">
+                <span class="speaker-region"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> United Kingdom</span>
+                <span class="speaker-day">Day 2</span>
+              </div>
+            </div>
+            <div class="speaker-body">
+              <h3 class="speaker-name">Dr. Auleep Ganguly</h3>
+              <p class="speaker-creds">BDS, MFDS RCSed, MSc</p>
+              <p class="speaker-inst"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> Dental Surgeon, United Kingdom</p>
+              <div class="speaker-topic">
+                <span class="speaker-topic__label">Session</span>
+                <p class="speaker-topic__title">Licensing and Registration in the UK</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="speaker-card" data-reveal>
+            <div class="speaker-media">
+              <img src="asset/images/dr-shawn.jpg" alt="Dr. Shawn Paul and Dr. Tham" width="205" height="241" loading="lazy">
+              <div class="speaker-badges">
+                <span class="speaker-region"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Australia</span>
+                <span class="speaker-day">Day 2</span>
+              </div>
+            </div>
+            <div class="speaker-body">
+              <h3 class="speaker-name">Dr. Shawn Paul &amp; Dr. Tham</h3>
+              <p class="speaker-creds">BDS, MFDS RCSed, Cert Ortho (NYU), ADC (Australia)</p>
+              <p class="speaker-inst"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> General Dental Practitioners, Restorative Dentistry &amp; Clear Aligner Orthodontics</p>
+              <div class="speaker-topic">
+                <span class="speaker-topic__label">Session</span>
+                <p class="speaker-topic__title">A Guide to Dental Registration in Australia</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="speaker-card" data-reveal>
+            <div class="speaker-media">
+              <img src="asset/images/dr-eng.jpg" alt="Dr. Yeoh Eng Seng" width="204" height="241" loading="lazy">
+              <div class="speaker-badges">
+                <span class="speaker-region"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Singapore / Hong Kong</span>
+                <span class="speaker-day">Day 2</span>
+              </div>
+            </div>
+            <div class="speaker-body">
+              <h3 class="speaker-name">Dr. Yeoh Eng Seng</h3>
+              <p class="speaker-creds">BDS (Hons), FICOI (USA), Dip Dental Implantology (NUS), MFDS (RCSE)</p>
+              <p class="speaker-inst"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> Associate Dental Surgeon, AllSmiles Dental Care</p>
+              <div class="speaker-topic">
+                <span class="speaker-topic__label">Session</span>
+                <p class="speaker-topic__title">Your Roadmap to Singapore Dental Council Registration &amp; Postgraduate Study in Hong Kong</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="speaker-card" data-reveal>
+            <div class="speaker-media">
+              <img src="asset/images/dr-beatrice.jpg" alt="Dr. Beatrice Ng Ming Ming" width="202" height="241" loading="lazy">
+              <div class="speaker-badges">
+                <span class="speaker-region"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> New Zealand</span>
+                <span class="speaker-day">Day 2</span>
+              </div>
+            </div>
+            <div class="speaker-body">
+              <h3 class="speaker-name">Dr. Beatrice Ng Ming Ming</h3>
+              <p class="speaker-creds">BDS, MFDS (RCS), DClin Dent (Special Needs Dentistry)</p>
+              <p class="speaker-inst"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> Special Needs Dental Specialist, Canterbury</p>
+              <div class="speaker-topic">
+                <span class="speaker-topic__label">Session</span>
+                <p class="speaker-topic__title">A Guide to Dental Council of New Zealand (DCNZ) Registration</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="speaker-card" data-reveal>
+            <div class="speaker-media">
+              <img src="asset/images/dr-suzanne.jpg" alt="Dr. Suzanne Kan" width="216" height="241" loading="lazy">
+              <div class="speaker-badges">
+                <span class="speaker-region"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> United States</span>
+                <span class="speaker-day">Day 2</span>
+              </div>
+            </div>
+            <div class="speaker-body">
+              <h3 class="speaker-name">Dr. Suzanne Kan</h3>
+              <p class="speaker-creds">BDS, DDS, UCLA Pediatric Dentistry Residency</p>
+              <p class="speaker-inst"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> American Board-Certified Pediatric Dentist, California</p>
+              <div class="speaker-topic">
+                <span class="speaker-topic__label">Session</span>
+                <p class="speaker-topic__title">U.S. Licensing Pathway: A Guide to Practising Dentistry in the USA</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="speaker-card" data-reveal>
+            <div class="speaker-media">
+              <img src="asset/images/Dr. Shince Mathew photo.jpeg" alt="Dr. Shince Mathew" width="400" height="400" loading="lazy">
+              <div class="speaker-badges">
+                <span class="speaker-region"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Canada</span>
+                <span class="speaker-day">Day 2</span>
+              </div>
+            </div>
+            <div class="speaker-body">
+              <h3 class="speaker-name">Dr. Shince Mathew</h3>
+              <p class="speaker-creds">BDS, DDS</p>
+              <p class="speaker-inst"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> General Dental Practitioner, Canada</p>
+              <div class="speaker-topic">
+                <span class="speaker-topic__label">Session</span>
+                <p class="speaker-topic__title">Canadian Licensing Pathway for Dental Practice</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="speaker-card" data-reveal>
+            <div class="speaker-media">
+              <img src="asset/images/dr-vinesh.png" alt="Dr. Vinesh Raj Savumthararaj" width="220" height="241" loading="lazy">
+              <div class="speaker-badges">
+                <span class="speaker-region"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Malaysia</span>
+                <span class="speaker-day">Day 2</span>
+              </div>
+            </div>
+            <div class="speaker-body">
+              <h3 class="speaker-name">Dr. Vinesh Raj Savumthararaj</h3>
+              <p class="speaker-creds">BDS (Oxford), MFDS RCSed, MOSC (UM), DrOMPathMed (UM), MIPHE (UK), Cert. Sleep Medicine (India), FAD, MBA (Lincoln)</p>
+              <p class="speaker-inst"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> Specialist in Oral Medicine &amp; Oral Maxillofacial Pathology, UiTM</p>
+              <div class="speaker-topic">
+                <span class="speaker-topic__label">Session</span>
+                <p class="speaker-topic__title">Dentist as Entrepreneur</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-band cta-band--inset">
+          <div class="cta-band__bg" aria-hidden="true">
+            <img src="asset/images/cta-clinic.jpg" alt="" width="1600" height="1067" loading="lazy">
+          </div>
+          <div class="cta-band__inner">
+            <h2>Join the <em>conversation.</em></h2>
+            <div class="cta-band__side">
+              <p>Put your questions to the panel across two days of live Q&amp;A. Early-bird registration is open until 1 September 2026.</p>
+              <div class="cta-band__actions">
+                <a href="registration.html" class="btn btn--accent">Register now <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                <a href="program.html" class="btn btn--ghost-light">View the programme</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer site-footer--flush">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand" aria-label="AIMST Faculty of Dentistry — home">
+            <span class="brand__mark" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 14.5c-4.4 0-6.1 2.1-8.8 2.1S18.9 14.5 16.5 17c-3.2 3.4-1.9 8.2-.3 12.8 1.1 3 1.6 8.7 4.1 8.7 2.4 0 1.5-5.7 3.7-5.7 2.1 0 2.3 5 4.8 5 2.4 0 2.2-7.3 3.6-7.3 1.4 0 1.5 4.8 3.3 4.8 2.5 0 3.4-5.9 4.4-8.7 1.6-4.7 2.8-9.7-.4-12.9C45.3 14.5 42 16.6 39.7 16.6S36.4 14.5 32 14.5Z" fill="#F6F3EC" />
+                <circle cx="32" cy="34" r="2.4" fill="#B1854C" />
+              </svg>
+            </span>
+            <span class="brand__text">
+              <span class="brand__name">AIMST</span>
+              <span class="brand__sub">Faculty of Dentistry</span>
+            </span>
+          </a>
+          <p>An online webinar guiding dental graduates from Malaysian registration to licensed practice around the world.</p>
+          <div class="footer-socials">
+            <a class="social-btn" href="https://www.facebook.com/aimst2u/" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a class="social-btn" href="https://www.instagram.com/aimstuniversity/" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a class="social-btn" href="https://my.linkedin.com/school/aimst-university2001/" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            <a class="social-btn" href="https://www.youtube.com/@aimstuniversityaimst2u" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="organiser.html">Organisers</a></li>
-            <li><a class="current" href="speakers.html">Speakers</a></li>
-            <li><a href="program.html">Program</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="program.html">Programme</a></li>
             <li><a href="registration.html">Registration</a></li>
             <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="container">
-        <h2 class="section-title">Webinar Speakers</h2>
-
-        <!-- Day Filter Tabs -->
-        <div class="tabs-container">
-            <button class="tab-btn active" onclick="switchDay('all')">
-                <i class="fa-solid fa-users"></i> All Speakers
-            </button>
-            <button class="tab-btn" onclick="switchDay('day1')">
-                <i class="fa-solid fa-calendar-day"></i> Day 1 (19 Sept)
-            </button>
-            <button class="tab-btn" onclick="switchDay('day2')">
-                <i class="fa-solid fa-calendar-day"></i> Day 2 (20 Sept)
-            </button>
+          </ul>
         </div>
 
-        <div id="day1" class="day-panel active">
-            <div class="day-header">
-                <i class="fa-regular fa-clock"></i> Day 1 Speakers — Saturday, 19 September 2026
-            </div>
-
-            <div class="speakers-grid">
-
-            <!-- Speaker 1 -->
-            <div class="speaker-card">
-                <div class="speaker-img-wrapper">
-                    <!-- Replace with real image: <img src="assets/speakers/speaker1.jpg" alt="Dr. Speaker Name"> -->
-                    <img src="./asset/images/dr-syakirin.jpg" alt=""> 
-                    <!-- <i class="fa-solid fa-user-doctor speaker-img-placeholder"></i> -->
-                    <!-- <span class="speaker-tag">Day 1 Speaker</span> -->
-                </div>
-                <div class="speaker-content">
-                    <h3 class="speaker-name-speaker">Dr. Nurul Syakirin Binti Abdul Shukor</h3>
-                    <div class="speaker-title">Dental Public Health Specialist</div>
-                    <div class="speaker-institution">
-                        <i class="fa-solid fa-building-columns"></i>
-                        <span>Secretary, Malaysian Dental Council</span>
-                    </div>
-                    
-                    <div class="topic-box">
-                        <span class="topic-label">Title</span>
-                        <div class="topic-title">“Practicing Dentistry in Malaysia – What You Need to Know”</div>
-                    </div>
-
-                    <!-- <p class="speaker-bio">
-                        An internationally recognized pioneer in eco-friendly dental biomaterials with over 20 years of research and clinical experience in sustainable oral care.
-                    </p> -->
-                </div>
-            </div>
-
-            <!-- Speaker 2 -->
-            <div class="speaker-card">
-                <div class="speaker-img-wrapper">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFzOlSORooYg-1SrARbc9Pu6dch_5KUz-q7hoYehuhfQ&s" alt="Prof. Dr. Speaker Name" class="speaker-img">
-                    <!-- <i class="fa-solid fa-user-doctor speaker-img-placeholder"></i> -->
-                    <!-- <span class="speaker-tag">Day 1 Speaker</span> -->
-                </div>
-                <div class="speaker-content">
-                    <h3 class="speaker-name-speaker">Dr. Ling Xiao Feng</h3>
-                    <div class="speaker-title">BDS, MDS Oral & Maxillofacial Surgery, MFDS (RCS), IBCSOMS (USA)</div>
-                    <div class="speaker-institution">
-                        <i class="fa-solid fa-building-columns"></i>
-                        <span>International Dental Federation (FDI)</span>
-                    </div>
-
-                    <div class="topic-box">
-                        <span class="topic-label">Title</span>
-                        <div class="topic-title">“Speciality posting at a glance: Oral & Maxillofacial Surgery”</div>
-                    </div>
-
-                    <!-- <p class="speaker-bio">
-                        Leading advocate for eco-friendly clinic design, energy reduction strategies, and sustainable waste handling in private and public dental setups.
-                    </p> -->
-                </div>
-            </div>
-
-            <!-- Speaker 3 -->
-            <div class="speaker-card">
-                <div class="speaker-img-wrapper">
-                    <!-- Replace with real image: <img src="assets/speakers/speaker3.jpg" alt="Dr. Speaker Name"> -->
-                    <img src="./asset/images/dr-adilah.jpg" alt="Dr. Nur'adilah Binti Ahmad Othman" class="speaker-img" >
-                    <!-- <i class="fa-solid fa-user-doctor speaker-img-placeholder"></i> -->
-                    <!-- <span class="speaker-tag">Day 1 Speaker</span> -->
-                </div>
-                <div class="speaker-content">
-                    <h3 class="speaker-name-speaker">Dr. Nur'adilah Binti Ahmad Othman</h3>
-                    <div class="speaker-title">BDS, DClin Dent (Paediatric Dentistry)</div>
-                    <div class="speaker-institution">
-                        <i class="fa-solid fa-building-columns"></i>
-                        <span>Head of Paediatric Dentistry Speciality, Hospital Sultanah Bahiyah, Malaysia</span>
-                    </div>
-
-                    <div class="topic-box">
-                        <span class="topic-label">Title</span>
-                        <div class="topic-title">"Speciality posting at a glance: Pediatrics Dentistry"</div>
-                    </div>
-
-                    <!-- <p class="speaker-bio">
-                        Specializes in community-based oral health initiatives and policy frameworks for promoting equitable dental care access.
-                    </p> -->
-                </div>
-            </div>
-
-            <!-- Speaker 4 -->
-            <div class="speaker-card">
-                <div class="speaker-img-wrapper">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDY1eeyQMStJtbNKd50yQzQHmpDIxyB2JjrmKSJRr5ZAWaDPsvh8n99Eyo&s=10" alt="Prof. Dr. Speaker Name" class="speaker-img">
-                    <!-- <i class="fa-solid fa-user-doctor speaker-img-placeholder"></i> -->
-                    <!-- <span class="speaker-tag">Day 1 Speaker</span> -->
-                </div>
-                <div class="speaker-content">
-                    <h3 class="speaker-name-speaker">Dr. Ratna Devi Sundaram</h3>
-                    <div class="speaker-title">BDS, Dip. Orthodontics (AFO New York)</div>
-                    <div class="speaker-institution">
-                        <i class="fa-solid fa-building-columns"></i>
-                        <span>Dental Surgeon, Entrepreneur, CEO and Co-Founder of Mediwira Group Holdings</span>
-                    </div>
-
-                    <div class="topic-box">
-                        <span class="topic-label">Title</span>
-                        <div class="topic-title">"From Graduate to Practice Owner: Setting Up Your Dental Clinic"</div>
-                    </div>
-
-                    <!-- <p class="speaker-bio">
-                        Specializes in community-based oral health initiatives and policy frameworks for promoting equitable dental care access.
-                    </p> -->
-                </div>
-            </div>
-
-            <!-- Speaker 5 -->
-            <div class="speaker-card">
-                <div class="speaker-img-wrapper">
-                    <!-- Replace with real image: <img src="assets/speakers/speaker3.jpg" alt="Dr. Speaker Name"> -->
-                    <img src="./asset/images/dr-ashwin.jpg" alt=""> 
-                    <!-- <i class="fa-solid fa-user-doctor speaker-img-placeholder"></i> -->
-                    <!-- <span class="speaker-tag">Day 1 Speaker</span> -->
-                </div>
-                <div class="speaker-content">
-                    <h3 class="speaker-name-speaker">Maj. Dr. Ashwin Nathan</h3>
-                    <div class="speaker-title">BDS, MFDS RCSed</div>
-                    <div class="speaker-institution">
-                        <i class="fa-solid fa-building-columns"></i>
-                        <span>Dental Officer, Malaysian Armed Forces</span>
-                    </div>
-
-                    <div class="topic-box">
-                        <span class="topic-label">Title</span>
-                        <div class="topic-title">"Towards the Career You Always Wanted - Armed Forces"</div>
-                    </div>
-
-                    <!-- <p class="speaker-bio">
-                        Specializes in community-based oral health initiatives and policy frameworks for promoting equitable dental care access.
-                    </p> -->
-                </div>
-            </div>
-
-            <!-- Speaker 6 -->
-            <div class="speaker-card">
-                <div class="speaker-img-wrapper">
-                    <!-- Replace with real image: <img src="assets/speakers/speaker3.jpg" alt="Dr. Speaker Name"> -->
-                    <img src="./asset/images/dr-hamidie.jpg" alt="Prof. Dr. Speaker Name" class="speaker-img">
-                    <!-- <i class="fa-solid fa-user-doctor speaker-img-placeholder"></i> -->
-                    <!-- <span class="speaker-tag">Day 1 Speaker</span> -->
-                </div>
-                <div class="speaker-content">
-                    <h3 class="speaker-name-speaker">Dr. Muhammad Hamidie Saari</h3>
-                    <div class="speaker-title">BDS, Doctor of Dental Public Health</div>
-                    <div class="speaker-institution">
-                        <i class="fa-solid fa-building-columns"></i>
-                        <span>Dental Public Specialist</span>
-                    </div>
-
-                    <div class="topic-box">
-                        <span class="topic-label">Title</span>
-                        <div class="topic-title">"Towards the Career You Always Wanted - Ministry of Health"</div>
-                    </div>
-
-                    <!-- <p class="speaker-bio">
-                        Specializes in community-based oral health initiatives and policy frameworks for promoting equitable dental care access.
-                    </p> -->
-                </div>
-            </div>
-
-            <!-- Speaker 7 -->
-            <div class="speaker-card">
-                <div class="speaker-img-wrapper">
-                    <!-- Replace with real image: <img src="assets/speakers/speaker3.jpg" alt="Dr. Speaker Name"> -->
-                    <img src="./asset/images/dato-dr-shah-kamal.jpg" alt="Prof. Dr. Speaker Name" class="speaker-img">
-                    <!-- <i class="fa-solid fa-user-doctor speaker-img-placeholder"></i> -->
-                    <!-- <span class="speaker-tag">Day 1 Speaker</span> -->
-                </div>
-                <div class="speaker-content">
-                    <h3 class="speaker-name-speaker">Dato' Dr. Shah Kamal Khan Bin Jamal Din</h3>
-                    <div class="speaker-title">MBBS, BDS, FDSRCPS Glasgow, Cert. OMFR Reconstructive Microvascular Surgery</div>
-                    <div class="speaker-institution">
-                        <i class="fa-solid fa-building-columns"></i>
-                        <span>Senior Consultant in Oral & Maxillofacial Surgery, AIMST University</span>
-                    </div>
-
-                    <div class="topic-box">
-                        <span class="topic-label">Title</span>
-                        <div class="topic-title">"Beyond the White Coat: Dress, Demeanor and Workplace Etiquette in Dentistry"</div>
-                    </div>
-
-                    <!-- <p class="speaker-bio">
-                        Specializes in community-based oral health initiatives and policy frameworks for promoting equitable dental care access.
-                    </p> -->
-                </div>
-            </div>
-            </div>
+        <div class="footer-col">
+          <h3>The event</h3>
+          <ul>
+            <li><i class="fa-regular fa-calendar" aria-hidden="true"></i> <span>19–20 September 2026</span></li>
+            <li><i class="fa-solid fa-globe" aria-hidden="true"></i> <span>Live online</span></li>
+            <li><i class="fa-solid fa-language" aria-hidden="true"></i> <span>English</span></li>
+            <li><i class="fa-solid fa-building-columns" aria-hidden="true"></i> <span>AIMST University, Malaysia</span></li>
+          </ul>
         </div>
 
-        <div id="day2" class="day-panel active">
-            <div class="day-header">
-                <i class="fa-regular fa-clock"></i> Day 2 Speakers — Sunday, 20 September 2026
-            </div>
-
-            <div class="speakers-grid">
-
-            <!-- Speaker 1 -->
-            <div class="speaker-card">
-                <div class="speaker-img-wrapper">
-                    <!-- Replace with real image: <img src="assets/speakers/speaker1.jpg" alt="Dr. Speaker Name"> -->
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL4_SS8GbcSkY7ePSLWtlqgzFF7JgdXIMCuXb98Yh7AQ&s=10" alt="Dr. Auleep Ganguly">
-                    <!-- <i class="fa-solid fa-user-doctor speaker-img-placeholder"></i> -->
-                    <!-- <span class="speaker-tag">Day 1 Speaker</span> -->
-                </div>
-                <div class="speaker-content">
-                    <h3 class="speaker-name-speaker">Dr. Auleep Ganguly</h3>
-                    <div class="speaker-title">BDS, MFDS RCSed, MSc</div>
-                    <div class="speaker-institution">
-                        <i class="fa-solid fa-building-columns"></i>
-                        <span>Dental Surgeon, United Kingdom</span>
-                    </div>
-                    
-                    <div class="topic-box">
-                        <span class="topic-label">Title</span>
-                        <div class="topic-title">“Licensing and Registration in the UK”</div>
-                    </div>
-
-                    <!-- <p class="speaker-bio">
-                        An internationally recognized pioneer in eco-friendly dental biomaterials with over 20 years of research and clinical experience in sustainable oral care.
-                    </p> -->
-                </div>
-            </div>
-
-            <!-- Speaker 2 -->
-            <div class="speaker-card">
-                <div class="speaker-img-wrapper">
-                    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFzOlSORooYg-1SrARbc9Pu6dch_5KUz-q7hoYehuhfQ&s" alt="Prof. Dr. Speaker Name" class="speaker-img"> -->
-                    <img src="./asset/images/dr-shawn.jpg" alt="">
-                    <!-- <i class="fa-solid fa-user-doctor speaker-img-placeholder"></i> -->
-                    <!-- <span class="speaker-tag">Day 1 Speaker</span> -->
-                </div>
-                <div class="speaker-content">
-                    <h3 class="speaker-name-speaker">Dr. Shawn Dr. Tham</h3>
-                    <div class="speaker-title">BDS, MFDS RCSed, Cert Ortho (NYU), ADC (Australia)</div>
-                    <div class="speaker-institution">
-                        <i class="fa-solid fa-building-columns"></i>
-                        <span>General Dental Practitioner, Restorative Dentistry, Clear Aligner Orthodontics</span>
-                    </div>
-
-                    <div class="topic-box">
-                        <span class="topic-label">Title</span>
-                        <div class="topic-title">“A Guide to Dental Registration in Australia”</div>
-                    </div>
-
-                    <!-- <p class="speaker-bio">
-                        Leading advocate for eco-friendly clinic design, energy reduction strategies, and sustainable waste handling in private and public dental setups.
-                    </p> -->
-                </div>
-            </div>
-
-            <!-- Speaker 3 -->
-            <div class="speaker-card">
-                <div class="speaker-img-wrapper">
-                    <!-- Replace with real image: <img src="assets/speakers/speaker3.jpg" alt="Dr. Speaker Name"> -->
-                    <img src="./asset/images/dr-eng.jpg" alt="Dr. Eng">
-                    <!-- <i class="fa-solid fa-user-doctor speaker-img-placeholder"></i> -->
-                    <!-- <span class="speaker-tag">Day 1 Speaker</span> -->
-                </div>
-                <div class="speaker-content">
-                    <h3 class="speaker-name-speaker">Dr. Yeoh Eng Seng</h3>
-                    <div class="speaker-title">BDS (Hons), FICOI (USA), Dip Dental Implantology (NUS), MFDS (RCSE) </div>
-                    <div class="speaker-institution">
-                        <i class="fa-solid fa-building-columns"></i>
-                        <span>Associate Dental Surgeon, AllSmiles Dental Care</span>
-                    </div>
-
-                    <div class="topic-box">
-                        <span class="topic-label">Title</span>
-                        <div class="topic-title">"Your Roadmap to a Singapore Dental Council (SDC) Registration & Hong Kong PG"</div>
-                    </div>
-
-                    <!-- <p class="speaker-bio">
-                        Specializes in community-based oral health initiatives and policy frameworks for promoting equitable dental care access.
-                    </p> -->
-                </div>
-            </div>
-
-            <!-- Speaker 4 -->
-            <div class="speaker-card">
-                <div class="speaker-img-wrapper">
-                    <img src="./asset/images/dr-beatrice.jpg" alt="Dr. Beatrice Ng Ming Ming" class="speaker-img">
-                    <!-- <i class="fa-solid fa-user-doctor speaker-img-placeholder"></i> -->
-                    <!-- <span class="speaker-tag">Day 1 Speaker</span> -->
-                </div>
-                <div class="speaker-content">
-                    <h3 class="speaker-name-speaker">Dr. Beatrice Ng Ming Ming</h3>
-                    <div class="speaker-title">BDS, MFDS (RCS), DClin Dent (Special Needs Dentistry)</div>
-                    <div class="speaker-institution">
-                        <i class="fa-solid fa-building-columns"></i>
-                        <span>Special Needs Dental Specialist, Canterbury</span>
-                    </div>
-
-                    <div class="topic-box">
-                        <span class="topic-label">Title</span>
-                        <div class="topic-title">"A Guide for Dental Council of New Zealand (DCNZ) Registration"</div>
-                    </div>
-
-                    <!-- <p class="speaker-bio">
-                        Specializes in community-based oral health initiatives and policy frameworks for promoting equitable dental care access.
-                    </p> -->
-                </div>
-            </div>
-
-            <!-- Speaker 5 -->
-            <div class="speaker-card">
-                <div class="speaker-img-wrapper">
-                    <img src="./asset/images/dr-suzanne.jpg" alt="Dr. Suzanne Kan" class="speaker-img">
-                    <!-- <i class="fa-solid fa-user-doctor speaker-img-placeholder"></i> -->
-                    <!-- <span class="speaker-tag">Day 1 Speaker</span> -->
-                </div>
-                <div class="speaker-content">
-                    <h3 class="speaker-name-speaker">Dr. Suzanne Kan</h3>
-                    <div class="speaker-title">BDS, DDS, UCLA Pediatric Dentistry Residency</div>
-                    <div class="speaker-institution">
-                        <i class="fa-solid fa-building-columns"></i>
-                        <span>American Board-Certified Pediatric Dentist, California</span>
-                    </div>
-
-                    <div class="topic-box">
-                        <span class="topic-label">Title</span>
-                        <div class="topic-title">"U.S Licensing Pathway: A Guide to Practising Dentistry in the USA"</div>
-                    </div>
-
-                    <!-- <p class="speaker-bio">
-                        Specializes in community-based oral health initiatives and policy frameworks for promoting equitable dental care access.
-                    </p> -->
-                </div>
-            </div>
-
-            <!-- Speaker 6 -->
-            <div class="speaker-card">
-                <div class="speaker-img-wrapper">
-                    <img src="./asset/images/Dr. Shince Mathew photo.jpeg" alt="Dr. Shince Mathew" class="speaker-img">
-                    <!-- <i class="fa-solid fa-user-doctor speaker-img-placeholder"></i> -->
-                    <!-- <span class="speaker-tag">Day 1 Speaker</span> -->
-                </div>
-                <div class="speaker-content">
-                    <h3 class="speaker-name-speaker">Dr. Shince Mathew</h3>
-                    <div class="speaker-title">BDS, DDS</div>
-                    <div class="speaker-institution">
-                        <i class="fa-solid fa-building-columns"></i>
-                        <span>General Dental Practitioner, Canada</span>
-                    </div>
-
-                    <div class="topic-box">
-                        <span class="topic-label">Title</span>
-                        <div class="topic-title">"Canadian Licensing Pathway for Dental Practice"</div>
-                    </div>
-
-                    <!-- <p class="speaker-bio">
-                        Specializes in community-based oral health initiatives and policy frameworks for promoting equitable dental care access.
-                    </p> -->
-                </div>
-            </div>
-
-            <!-- Speaker 7 -->
-            <div class="speaker-card">
-                <div class="speaker-img-wrapper">
-                    <img src="./asset/images/dr-vinesh.png" alt="Dr. Vinesh Raj Savumthararaj" class="speaker-img">
-                    <!-- <i class="fa-solid fa-user-doctor speaker-img-placeholder"></i> -->
-                    <!-- <span class="speaker-tag">Day 1 Speaker</span> -->
-                </div>
-                <div class="speaker-content">
-                    <h3 class="speaker-name-speaker">Dr. Vinesh Raj Savumthararaj</h3>
-                    <div class="speaker-title">BDS (Oxford), MFDS RCSed, MOSC (UM), DrOMPathMed (UM), MIPHE (UK), Cert. Sleep Medicine (India), FAD, MBA (Lincoln)</div>
-                    <div class="speaker-institution">
-                        <i class="fa-solid fa-building-columns"></i>
-                        <span>Specialist in Oral Medicine and Oral & Maxillofacial Pathology, University Teknologi MARA (UiTM)</span>
-                    </div>
-
-                    <div class="topic-box">
-                        <span class="topic-label">Title</span>
-                        <div class="topic-title">"Dentist as Entrepreneur"</div>
-                    </div>
-
-                    <!-- <p class="speaker-bio">
-                        Specializes in community-based oral health initiatives and policy frameworks for promoting equitable dental care access.
-                    </p> -->
-                </div>
-            </div>
-            </div>
+        <div class="footer-register">
+          <h3>Reserve your place</h3>
+          <p>Early-bird registration closes 1 September 2026. Fees start from RM 100.</p>
+          <a href="registration.html" class="btn btn--accent btn--sm">View fees &amp; register <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
         </div>
+      </div>
 
-        
-
-        <!-- Call to Action -->
-        <div class="cta-banner">
-            <h3>Join Us at the Webinar</h3>
-            <p>Register now to attend presentations from world-class experts in sustainable dental practice.</p>
-            <a href="https://forms.gle/yitCFHiumkZ3yNJd8" target="_blank" class="btn-cta">
-                <i class="fa-solid fa-pen-to-square"></i> Register for Webinar
-            </a>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> AIMST University, Malaysia · Faculty of Dentistry</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy notice</a>
+          <a href="terms.html">Terms</a>
+          <a href="contact.html">Contact</a>
         </div>
+        <button class="to-top" type="button" data-to-top>Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </footer>
 
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <img src="./asset/images/aimstlogo100.png" alt="AIMST Logo">
-        <span>AIMST University, Malaysia &copy; 2026 | FOD Online Webinar</span>
-    </footer>
-
-    <!-- Tab Filtering Script -->
-    <script>
-        function switchDay(day) {
-            const buttons = document.querySelectorAll('.tab-btn');
-            const panels = document.querySelectorAll('.day-panel');
-
-            // Update active button state
-            buttons.forEach(btn => btn.classList.remove('active'));
-            event.currentTarget.classList.add('active');
-
-            // Toggle active panel visibility
-            if (day === 'all') {
-                panels.forEach(panel => panel.classList.add('active'));
-            } else {
-                panels.forEach(panel => {
-                    if (panel.id === day) {
-                        panel.classList.add('active');
-                    } else {
-                        panel.classList.remove('active');
-                    }
-                });
-            }
-        }
-    </script>
-
+  <script src="js/main.js" defer></script>
 </body>
+
 </html>

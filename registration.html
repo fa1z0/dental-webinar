@@ -1,112 +1,325 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="assets/aimst logo favicon.png"/>
-    <meta name="description" content="Online Webinar - Registration" />
-    <title>Registration | Online Webinar</title>
-    <!-- Font Awesome for clean icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
 
-  <body>
-    <!-- Header Banner -->
-    <header class="banner">
-      <div class="banner-content">
-        <span class="badge">Online Webinar</span>
-        <h1>Graduation to Global Practice: You Dental Career Journey</h1>
-        <p class="subtitle">19–20 September 2026</p>
-        <div class="tagline">
-          A platform to identify your scope after graduation!
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration · Graduation to Global Practice Webinar</title>
+  <meta name="description" content="Register for the AIMST Faculty of Dentistry webinar. Early-bird fees from RM 100 for AIMST students and alumni, RM 120 for non-AIMST students and RM 150 for practitioners until 1 September 2026.">
+  <meta name="theme-color" content="#0C4A3E">
+  <meta property="og:title" content="Registration · Graduation to Global Practice">
+  <meta property="og:description" content="Two-day live access, interactive Q&amp;A and a digital certificate of attendance. Early-bird registration closes 1 September 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="asset/images/hero-alt2.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var t = localStorage.getItem('fod-theme');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        d.setAttribute('data-theme', t);
+      } catch (e) {
+        d.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <div class="announce">
+    <div class="container announce__inner">
+      <p class="announce__text">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span class="announce__hide">Online webinar · 19–20 September 2026</span>
+        <span class="announce__hide" aria-hidden="true">·</span>
+        <strong><span data-countdown-inline>Early-bird now open</span></strong>
+      </p>
+      <a class="announce__link" href="registration.html">Register <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <div class="container nav-shell__inner">
+        <a href="index.html" class="brand" aria-label="AIMST Faculty of Dentistry — home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32 14.5c-4.4 0-6.1 2.1-8.8 2.1S18.9 14.5 16.5 17c-3.2 3.4-1.9 8.2-.3 12.8 1.1 3 1.6 8.7 4.1 8.7 2.4 0 1.5-5.7 3.7-5.7 2.1 0 2.3 5 4.8 5 2.4 0 2.2-7.3 3.6-7.3 1.4 0 1.5 4.8 3.3 4.8 2.5 0 3.4-5.9 4.4-8.7 1.6-4.7 2.8-9.7-.4-12.9C45.3 14.5 42 16.6 39.7 16.6S36.4 14.5 32 14.5Z" fill="#F6F3EC" />
+              <circle cx="32" cy="34" r="2.4" fill="#B1854C" />
+            </svg>
+          </span>
+          <span class="brand__text">
+            <span class="brand__name">AIMST</span>
+            <span class="brand__sub">Faculty of Dentistry</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html">Home</a></li>
+            <li><a class="nav__link" href="organiser.html">Organisers</a></li>
+            <li><a class="nav__link" href="speakers.html">Speakers</a></li>
+            <li><a class="nav__link" href="program.html">Programme</a></li>
+            <li><a class="nav__link is-active" aria-current="page" href="registration.html">Registration</a></li>
+            <li><a class="nav__link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+            <span class="theme-toggle__track" aria-hidden="true">
+              <i class="fa-solid fa-sun"></i>
+              <i class="fa-solid fa-moon"></i>
+              <span class="theme-toggle__thumb"></span>
+            </span>
+          </button>
+          <a href="registration.html" class="btn btn--primary btn--sm nav-cta" aria-current="page">Register</a>
+          <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+            <span></span><span></span>
+          </button>
         </div>
       </div>
-    </header>
+    </div>
 
-    <!-- Navigation Bar -->
-    <nav class="nav-wrapper">
-      <ul class="navigation">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="organiser.html">Organisers</a></li>
-        <li><a href="speakers.html">Speakers</a></li>
-        <li><a href="program.html">Program</a></li>
-        <li><a class="current" href="registration.html">Registration</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <nav aria-label="Mobile navigation">
+        <ul class="mobile-nav__list">
+          <li><a class="mobile-nav__link" href="index.html">Home <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link" href="organiser.html">Organisers <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link" href="speakers.html">Speakers <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link" href="program.html">Programme <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link is-active" href="registration.html">Registration <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+          <li><a class="mobile-nav__link" href="contact.html">Contact <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+        </ul>
+      </nav>
+      <div class="mobile-nav__footer">
+        <p class="mobile-nav__meta">19–20 September 2026 · Live online</p>
+        <a href="https://forms.gle/yitCFHiumkZ3yNJd8" target="_blank" rel="noopener noreferrer" class="btn btn--accent btn--block">Open registration form <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        <a href="contact.html" class="btn btn--ghost btn--block">Contact the secretariat</a>
+      </div>
+    </div>
+  </header>
 
-    <!-- Main Content -->
-    <main class="container">
-      <h2 class="section-title">Registration Fees & Online Portal</h2>
+  <main id="main">
+    <section class="page-hero">
+      <div class="page-hero__bg" aria-hidden="true">
+        <img src="asset/images/hero-alt2.jpg" alt="" width="1600" height="1067" fetchpriority="high">
+      </div>
+      <div class="container page-hero__inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          <span aria-current="page">Registration</span>
+        </nav>
+        <p class="eyebrow eyebrow--light">Registration</p>
+        <h1>Reserve your <em>place.</em></h1>
+        <p class="page-hero__lede">Two days, fourteen sessions and direct access to the speakers. Choose the category that applies to you and complete the online form — early-bird rates close on 1 September 2026.</p>
+        <div class="page-hero__meta">
+          <span><i class="fa-solid fa-tag" aria-hidden="true"></i> From RM 100</span>
+          <span><i class="fa-solid fa-hourglass-half" aria-hidden="true"></i> Early bird ends 1 Sept</span>
+          <span><i class="fa-solid fa-laptop" aria-hidden="true"></i> Online form</span>
+        </div>
+      </div>
+    </section>
 
-        <div class="grid-layout">
-            
-            <!-- Left Side: Pricing Table -->
-            <div class="price-card">
-                <div class="price-card-header">
-                    <h3><i class="fa-solid fa-tags"></i> Registration Categories & Fee Structure</h3>
-                </div>
-
-                <div class="pricing-table-wrapper">
-                    <table class="pricing-table">
-                        <thead>
-                            <tr>
-                                <th>Category</th>
-                                <th class="highlight-th">Early Bird Fee<br><small style="font-weight: 500;">(till 1st Sept)</small></th>
-                                <th>After 1st Sept</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>AIMST Students / Alumni</strong></td>
-                                <td class="fee-early">RM 100</td>
-                                <td class="fee-regular">RM 120</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Non-AIMST Students</strong></td>
-                                <td class="fee-early">RM 120</td>
-                                <td class="fee-regular">RM 150</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Practitioner</strong></td>
-                                <td class="fee-early">RM 150</td>
-                                <td class="fee-regular">RM 180</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="info-box">
-                    <i class="fa-solid fa-circle-info"></i>
-                    <div>
-                        <strong>Note on Early Bird Rate:</strong> Register on or before <strong>1st September 2026</strong> to enjoy the reduced early bird fee structure.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Side: QR Code Scan Card -->
-            <div class="qr-card">
-                <h3><i class="fa-solid fa-qrcode"></i> Quick Registration</h3>
-                <p>Scan the QR code below with your mobile camera to open the online Google Form instantly.</p>
-
-                <div class="qr-image-wrapper">
-                    <img src="./asset/images/qr-webinar.png" alt="Scan QR Code to Register">
-                </div>
-
-                <a href="https://forms.gle/yitCFHiumkZ3yNJd8" target="_blank" class="btn-register">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Registration Form
-                </a>
-            </div>
-
+    <div class="container reg-layout">
+      <div>
+        <div class="section-head section-head--tight" data-reveal>
+          <p class="eyebrow">Categories &amp; fees</p>
+          <h2>One registration. Both days.</h2>
         </div>
 
-    </main>
+        <div class="pricing-grid">
+          <article class="price-card" data-reveal>
+            <div class="price-card__head">
+              <h3 class="price-card__category">AIMST Students &amp; Alumni</h3>
+              <span class="tag tag--brass">Early bird</span>
+            </div>
+            <span class="price-card__label">Early-bird fee</span>
+            <div class="price-card__price">
+              <span class="price-card__currency">RM</span>
+              <span class="price-card__amount">100</span>
+            </div>
+            <p class="price-card__was">Regular fee after 1 Sept: <s>RM 120</s><span class="price-card__save">Save RM 20 with early bird</span></p>
+            <ul class="price-card__list">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Two-day live access</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Interactive Q&amp;A sessions</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Digital certificate of attendance</li>
+            </ul>
+            <a href="https://forms.gle/yitCFHiumkZ3yNJd8" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--block price-card__cta">
+              Register <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+          </article>
 
-    <!-- Footer -->
-    <footer>
-      <img src="./asset/images/aimstlogo100.png" alt="AIMST Logo" />
-      <span>AIMST University, Malaysia &copy; 2026 | FOD Online Webinar</span>
-    </footer>
-  </body>
+          <article class="price-card" data-reveal>
+            <div class="price-card__head">
+              <h3 class="price-card__category">Non-AIMST Students</h3>
+              <span class="tag tag--brass">Early bird</span>
+            </div>
+            <span class="price-card__label">Early-bird fee</span>
+            <div class="price-card__price">
+              <span class="price-card__currency">RM</span>
+              <span class="price-card__amount">120</span>
+            </div>
+            <p class="price-card__was">Regular fee after 1 Sept: <s>RM 150</s><span class="price-card__save">Save RM 30 with early bird</span></p>
+            <ul class="price-card__list">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Two-day live access</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Interactive Q&amp;A sessions</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Digital certificate of attendance</li>
+            </ul>
+            <a href="https://forms.gle/yitCFHiumkZ3yNJd8" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--block price-card__cta">
+              Register <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+          </article>
+
+          <article class="price-card" data-reveal>
+            <div class="price-card__head">
+              <h3 class="price-card__category">Practitioners</h3>
+              <span class="tag tag--brass">Early bird</span>
+            </div>
+            <span class="price-card__label">Early-bird fee</span>
+            <div class="price-card__price">
+              <span class="price-card__currency">RM</span>
+              <span class="price-card__amount">150</span>
+            </div>
+            <p class="price-card__was">Regular fee after 1 Sept: <s>RM 180</s><span class="price-card__save">Save RM 30 with early bird</span></p>
+            <ul class="price-card__list">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Two-day live access</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Interactive Q&amp;A sessions</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Digital certificate of attendance</li>
+            </ul>
+            <a href="https://forms.gle/yitCFHiumkZ3yNJd8" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--block price-card__cta">
+              Register <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+          </article>
+        </div>
+
+        <div class="inclusions">
+          <div class="inclusion" data-reveal>
+            <i class="fa-solid fa-video" aria-hidden="true"></i>
+            <div><strong>Live both days</strong><span>Join every session in real time.</span></div>
+          </div>
+          <div class="inclusion" data-reveal>
+            <i class="fa-solid fa-comments" aria-hidden="true"></i>
+            <div><strong>Ask the panel</strong><span>Interactive Q&amp;A after the talks.</span></div>
+          </div>
+          <div class="inclusion" data-reveal>
+            <i class="fa-solid fa-award" aria-hidden="true"></i>
+            <div><strong>Certificate</strong><span>Digital attendance certificate.</span></div>
+          </div>
+        </div>
+
+        <div class="notice notice--spaced" data-reveal>
+          <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+          <div><strong>Early-bird rate:</strong> register on or before <strong>1 September 2026</strong> to enjoy the reduced fee. Fees are listed in Malaysian Ringgit (RM).</div>
+        </div>
+      </div>
+
+      <aside class="reg-side">
+        <div class="qr-panel" data-reveal>
+          <h3><i class="fa-solid fa-qrcode" aria-hidden="true"></i> Quick registration</h3>
+          <p>Scan the QR code with your phone camera to open the online form instantly.</p>
+          <div class="qr-frame">
+            <img src="asset/images/qr-webinar.png" alt="QR code linking to the webinar registration form" width="193" height="193" loading="lazy">
+          </div>
+          <a href="https://forms.gle/yitCFHiumkZ3yNJd8" target="_blank" rel="noopener noreferrer" class="btn btn--accent btn--block">
+            Open registration form <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="help-card" data-reveal>
+          <h4><i class="fa-solid fa-headset" aria-hidden="true"></i> Need help registering?</h4>
+          <p>For registration and payment enquiries, contact Dr. Niyas Ummer Mohammed.</p>
+          <div class="contact-line"><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+60178511044">+60 17-851 1044</a></div>
+          <div class="contact-line contact-line--spaced"><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:aimstdentalcareer@gmail.com">aimstdentalcareer@gmail.com</a></div>
+        </div>
+
+        <div class="help-card" data-reveal>
+          <h4><i class="fa-solid fa-list-check" aria-hidden="true"></i> Before you start</h4>
+          <p>Have your full name, email address, institution and category ready. The form takes about two minutes.</p>
+          <a class="link-arrow" href="contact.html">Contact the secretariat <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand" aria-label="AIMST Faculty of Dentistry — home">
+            <span class="brand__mark" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 14.5c-4.4 0-6.1 2.1-8.8 2.1S18.9 14.5 16.5 17c-3.2 3.4-1.9 8.2-.3 12.8 1.1 3 1.6 8.7 4.1 8.7 2.4 0 1.5-5.7 3.7-5.7 2.1 0 2.3 5 4.8 5 2.4 0 2.2-7.3 3.6-7.3 1.4 0 1.5 4.8 3.3 4.8 2.5 0 3.4-5.9 4.4-8.7 1.6-4.7 2.8-9.7-.4-12.9C45.3 14.5 42 16.6 39.7 16.6S36.4 14.5 32 14.5Z" fill="#F6F3EC" />
+                <circle cx="32" cy="34" r="2.4" fill="#B1854C" />
+              </svg>
+            </span>
+            <span class="brand__text">
+              <span class="brand__name">AIMST</span>
+              <span class="brand__sub">Faculty of Dentistry</span>
+            </span>
+          </a>
+          <p>An online webinar guiding dental graduates from Malaysian registration to licensed practice around the world.</p>
+          <div class="footer-socials">
+            <a class="social-btn" href="https://www.facebook.com/aimst2u/" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a class="social-btn" href="https://www.instagram.com/aimstuniversity/" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a class="social-btn" href="https://my.linkedin.com/school/aimst-university2001/" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            <a class="social-btn" href="https://www.youtube.com/@aimstuniversityaimst2u" target="_blank" rel="noopener noreferrer" aria-label="AIMST University on YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="organiser.html">Organisers</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="program.html">Programme</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>The event</h3>
+          <ul>
+            <li><i class="fa-regular fa-calendar" aria-hidden="true"></i> <span>19–20 September 2026</span></li>
+            <li><i class="fa-solid fa-globe" aria-hidden="true"></i> <span>Live online</span></li>
+            <li><i class="fa-solid fa-language" aria-hidden="true"></i> <span>English</span></li>
+            <li><i class="fa-solid fa-building-columns" aria-hidden="true"></i> <span>AIMST University, Malaysia</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-register">
+          <h3>Reserve your place</h3>
+          <p>Early-bird registration closes 1 September 2026. Fees start from RM 100.</p>
+          <a href="https://forms.gle/yitCFHiumkZ3yNJd8" target="_blank" rel="noopener noreferrer" class="btn btn--accent btn--sm">Register now <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> AIMST University, Malaysia · Faculty of Dentistry</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy notice</a>
+          <a href="terms.html">Terms</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <button class="to-top" type="button" data-to-top>Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+
 </html>
